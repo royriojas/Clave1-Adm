@@ -1,0 +1,1415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="audimedModelStoreContainer" CdmEntityContainer="audimedEntities">
+    <EntitySetMapping Name="Adm_AnhoVehiculo">
+      <EntityTypeMapping TypeName="audimedModel.Adm_AnhoVehiculo">
+        <MappingFragment StoreEntitySet="Adm_AnhoVehiculo">
+          <ScalarProperty Name="marcaVehiculoId" ColumnName="marcaVehiculoId" />
+          <ScalarProperty Name="modeloVehiculoId" ColumnName="modeloVehiculoId" />
+          <ScalarProperty Name="anhoVehiculoId" ColumnName="anhoVehiculoId" />
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+          <ScalarProperty Name="valorComercial" ColumnName="valorComercial" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="monedaId" ColumnName="monedaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Asegurado">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Asegurado">
+        <MappingFragment StoreEntitySet="Adm_Asegurado">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="aseguradoId" ColumnName="aseguradoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Aseguradora">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Aseguradora">
+        <MappingFragment StoreEntitySet="Adm_Aseguradora">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Beneficiario">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Beneficiario">
+        <MappingFragment StoreEntitySet="Adm_Beneficiario">
+          <ScalarProperty Name="beneficiarioId" ColumnName="beneficiarioId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Broker">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Broker">
+        <MappingFragment StoreEntitySet="Adm_Broker">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_ClaseVehiculo">
+      <EntityTypeMapping TypeName="audimedModel.Adm_ClaseVehiculo">
+        <MappingFragment StoreEntitySet="Adm_ClaseVehiculo">
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+          <ScalarProperty Name="claseVehiculo" ColumnName="claseVehiculo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Cliente">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Cliente">
+        <MappingFragment StoreEntitySet="Adm_Cliente">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="serverid" ColumnName="serverid" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Direccion">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Direccion">
+        <MappingFragment StoreEntitySet="Adm_Direccion">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="direccionId" ColumnName="direccionId" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="tdireccionId" ColumnName="tdireccionId" />
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_DocId">
+      <EntityTypeMapping TypeName="audimedModel.Adm_DocId">
+        <MappingFragment StoreEntitySet="Adm_DocId">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="docid" ColumnName="docid" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="tdocidId" ColumnName="tdocidId" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Empleado">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Empleado">
+        <MappingFragment StoreEntitySet="Adm_Empleado">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="cargoId" ColumnName="cargoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_EstadoCivil">
+      <EntityTypeMapping TypeName="audimedModel.Adm_EstadoCivil">
+        <MappingFragment StoreEntitySet="Adm_EstadoCivil">
+          <ScalarProperty Name="estadoCivilId" ColumnName="estadoCivilId" />
+          <ScalarProperty Name="estadoCivil" ColumnName="estadoCivil" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Inspector">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Inspector">
+        <MappingFragment StoreEntitySet="Adm_Inspector">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_MarcaVehiculo">
+      <EntityTypeMapping TypeName="audimedModel.Adm_MarcaVehiculo">
+        <MappingFragment StoreEntitySet="Adm_MarcaVehiculo">
+          <ScalarProperty Name="marcaVehiculoId" ColumnName="marcaVehiculoId" />
+          <ScalarProperty Name="marcaVehiculo" ColumnName="marcaVehiculo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_ModeloVehiculo">
+      <EntityTypeMapping TypeName="audimedModel.Adm_ModeloVehiculo">
+        <MappingFragment StoreEntitySet="Adm_ModeloVehiculo">
+          <ScalarProperty Name="modeloVehiculoId" ColumnName="modeloVehiculoId" />
+          <ScalarProperty Name="marcaVehiculoId" ColumnName="marcaVehiculoId" />
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+          <ScalarProperty Name="modeloVehiculo" ColumnName="modeloVehiculo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Moneda">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Moneda">
+        <MappingFragment StoreEntitySet="Adm_Moneda">
+          <ScalarProperty Name="monedaId" ColumnName="monedaId" />
+          <ScalarProperty Name="moneda" ColumnName="moneda" />
+          <ScalarProperty Name="simbolo" ColumnName="simbolo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Persona">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Persona">
+        <MappingFragment StoreEntitySet="Adm_Persona">
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="contactodeId" ColumnName="contactodeId" />
+          <ScalarProperty Name="persona" ColumnName="persona" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="nombre1" ColumnName="nombre1" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="nombre2" ColumnName="nombre2" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="apellido1" ColumnName="apellido1" />
+          <ScalarProperty Name="apellido2" ColumnName="apellido2" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estadoCivilId" ColumnName="estadoCivilId" />
+          <ScalarProperty Name="fnacimiento" ColumnName="fnacimiento" />
+          <ScalarProperty Name="conyuge" ColumnName="conyuge" />
+          <ScalarProperty Name="usuarioId" ColumnName="usuarioId" />
+          <ScalarProperty Name="email2" ColumnName="email2" />
+          <ScalarProperty Name="vip" ColumnName="vip" />
+          <ScalarProperty Name="personaJuridica" ColumnName="personaJuridica" />
+          <ScalarProperty Name="menorEdad" ColumnName="menorEdad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_PunraPrimra">
+      <EntityTypeMapping TypeName="audimedModel.Adm_PunraPrimra">
+        <MappingFragment StoreEntitySet="Adm_PunraPrimra">
+          <ScalarProperty Name="primeraLetra" ColumnName="primeraLetra" />
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_PunraSegunda">
+      <EntityTypeMapping TypeName="audimedModel.Adm_PunraSegunda">
+        <MappingFragment StoreEntitySet="Adm_PunraSegunda">
+          <ScalarProperty Name="segundaLetra" ColumnName="segundaLetra" />
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TCambio">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TCambio">
+        <MappingFragment StoreEntitySet="Adm_TCambio">
+          <ScalarProperty Name="monedaId" ColumnName="monedaId" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="tCambio" ColumnName="tCambio" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TComunicacion">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TComunicacion">
+        <MappingFragment StoreEntitySet="Adm_TComunicacion">
+          <ScalarProperty Name="tcomunicacionId" ColumnName="tcomunicacionId" />
+          <ScalarProperty Name="tcomunicacion" ColumnName="tcomunicacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TDireccion">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TDireccion">
+        <MappingFragment StoreEntitySet="Adm_TDireccion">
+          <ScalarProperty Name="tdireccionId" ColumnName="tdireccionId" />
+          <ScalarProperty Name="tdireccion" ColumnName="tdireccion" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TDocId">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TDocId">
+        <MappingFragment StoreEntitySet="Adm_TDocId">
+          <ScalarProperty Name="tdocidId" ColumnName="tdocidId" />
+          <ScalarProperty Name="tdocid" ColumnName="tdocid" />
+          <ScalarProperty Name="regularExpression" ColumnName="regularExpression" />
+          <ScalarProperty Name="nroCaracteres" ColumnName="nroCaracteres" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TelefonoPersona">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TelefonoPersona">
+        <MappingFragment StoreEntitySet="Adm_TelefonoPersona">
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="telefonoId" ColumnName="telefonoId" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="ttelefonoId" ColumnName="ttelefonoId" />
+          <ScalarProperty Name="personaId" ColumnName="personaId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TPersona">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TPersona">
+        <MappingFragment StoreEntitySet="Adm_TPersona">
+          <ScalarProperty Name="tpersonaId" ColumnName="tpersonaId" />
+          <ScalarProperty Name="tpersona" ColumnName="tpersona" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_TTelefono">
+      <EntityTypeMapping TypeName="audimedModel.Adm_TTelefono">
+        <MappingFragment StoreEntitySet="Adm_TTelefono">
+          <ScalarProperty Name="ttelefonoId" ColumnName="ttelefonoId" />
+          <ScalarProperty Name="ttelefono" ColumnName="ttelefono" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Ubigeo">
+      <EntityTypeMapping TypeName="audimedModel.Adm_Ubigeo">
+        <MappingFragment StoreEntitySet="Adm_Ubigeo">
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+          <ScalarProperty Name="ubigeo" ColumnName="ubigeo" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="coddep" ColumnName="coddep" />
+          <ScalarProperty Name="codpro" ColumnName="codpro" />
+          <ScalarProperty Name="coddis" ColumnName="coddis" />
+          <ScalarProperty Name="depprodis" ColumnName="depprodis" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AltaMedica">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AltaMedica">
+        <MappingFragment StoreEntitySet="AUD_AltaMedica">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="tipoAltaMedica" ColumnName="tipoAltaMedica" />
+          <ScalarProperty Name="fechaAlta" ColumnName="fechaAlta" />
+          <ScalarProperty Name="numDiasHospital" ColumnName="numDiasHospital" />
+          <ScalarProperty Name="fechaProbableAlta" ColumnName="fechaProbableAlta" />
+          <ScalarProperty Name="medicoTratante" ColumnName="medicoTratante" />
+          <ScalarProperty Name="numCMP" ColumnName="numCMP" />
+          <ScalarProperty Name="proximaCita" ColumnName="proximaCita" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="fechaSegundaVisita" ColumnName="fechaSegundaVisita" />
+          <ScalarProperty Name="fechaTerceraVisita" ColumnName="fechaTerceraVisita" />
+          <ScalarProperty Name="medicoTratanteDefinitivo" ColumnName="medicoTratanteDefinitivo" />
+          <ScalarProperty Name="numCMPDefinitivo" ColumnName="numCMPDefinitivo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AmpConsultaAmbulatoria">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AmpConsultaAmbulatoria">
+        <MappingFragment StoreEntitySet="AUD_AmpConsultaAmbulatoria">
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="lugarAtencion" ColumnName="lugarAtencion" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="comentarioConsulta" ColumnName="comentarioConsulta" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AmpliatorioMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AmpliatorioMedico">
+        <MappingFragment StoreEntitySet="AUD_AmpliatorioMedico">
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="comentarioControlAuditoria" ColumnName="comentarioControlAuditoria" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="detalleAmpliatorio" ColumnName="detalleAmpliatorio" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="cartaGarantiaId" ColumnName="cartaGarantiaId" />
+          <ScalarProperty Name="otroMotivoAmpliatorio" ColumnName="otroMotivoAmpliatorio" />
+          <ScalarProperty Name="motivoEmisionId" ColumnName="motivoEmisionId" />
+          <ScalarProperty Name="pendienteCartaGarantia" ColumnName="pendienteCartaGarantia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AmpMateriaOsteosintesis">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AmpMateriaOsteosintesis">
+        <MappingFragment StoreEntitySet="AUD_AmpMateriaOsteosintesis">
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="detalleAmpliatorio" ColumnName="detalleAmpliatorio" />
+          <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="precioTotal" ColumnName="precioTotal" />
+          <ScalarProperty Name="cartaGarantiaId" ColumnName="cartaGarantiaId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AmpPermanenciaHospitalaria">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AmpPermanenciaHospitalaria">
+        <MappingFragment StoreEntitySet="AUD_AmpPermanenciaHospitalaria">
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="nroDiasAdicionales" ColumnName="nroDiasAdicionales" />
+          <ScalarProperty Name="fechaProbableAlta" ColumnName="fechaProbableAlta" />
+          <ScalarProperty Name="altaMedicaDefinitiva" ColumnName="altaMedicaDefinitiva" />
+          <ScalarProperty Name="fechaAltaDefinitiva" ColumnName="fechaAltaDefinitiva" />
+          <ScalarProperty Name="fechaProximaVisita" ColumnName="fechaProximaVisita" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AnexoSiniestro">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AnexoSiniestro">
+        <MappingFragment StoreEntitySet="AUD_AnexoSiniestro">
+          <ScalarProperty Name="anexoId" ColumnName="anexoId" />
+          <ScalarProperty Name="anexo" ColumnName="anexo" />
+          <ScalarProperty Name="nombreArchivo" ColumnName="nombreArchivo" />
+          <ScalarProperty Name="tipoArchivo" ColumnName="tipoArchivo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="siniestroId" ColumnName="siniestroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AtencionAnterior">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AtencionAnterior">
+        <MappingFragment StoreEntitySet="AUD_AtencionAnterior">
+          <ScalarProperty Name="fichaAtencionAnteriorId" ColumnName="fichaAtencionAnteriorId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="fechaIngresoLesionado" ColumnName="fechaIngresoLesionado" />
+          <ScalarProperty Name="nombreProveedorTraslado" ColumnName="nombreProveedorTraslado" />
+          <ScalarProperty Name="nombreCentroMedico" ColumnName="nombreCentroMedico" />
+          <ScalarProperty Name="medioEvacuacionId" ColumnName="medioEvacuacionId" />
+          <ScalarProperty Name="provedorTrasladoId" ColumnName="provedorTrasladoId" />
+          <ScalarProperty Name="nombreResponsableTraslado" ColumnName="nombreResponsableTraslado" />
+          <ScalarProperty Name="estadoCentroMedico" ColumnName="estadoCentroMedico" />
+          <ScalarProperty Name="medioTrasladoId" ColumnName="medioTrasladoId" />
+          <ScalarProperty Name="personaAutorizoTrasladoId" ColumnName="personaAutorizoTrasladoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_AtencionInicial">
+      <EntityTypeMapping TypeName="audimedModel.AUD_AtencionInicial">
+        <MappingFragment StoreEntitySet="AUD_AtencionInicial">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+          <ScalarProperty Name="nombreEmergencista" ColumnName="nombreEmergencista" />
+          <ScalarProperty Name="numeroCMP" ColumnName="numeroCMP" />
+          <ScalarProperty Name="motivoTraslado" ColumnName="motivoTraslado" />
+          <ScalarProperty Name="nombreProveedorTraslado" ColumnName="nombreProveedorTraslado" />
+          <ScalarProperty Name="medioEvacuacionId" ColumnName="medioEvacuacionId" />
+          <ScalarProperty Name="centroMedicoInicioId" ColumnName="centroMedicoInicioId" />
+          <ScalarProperty Name="centroMedicoTrasladarId" ColumnName="centroMedicoTrasladarId" />
+          <ScalarProperty Name="proveedorTraslado" ColumnName="proveedorTraslado" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="medioTrasladoId" ColumnName="medioTrasladoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CalificacionAuditoria">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CalificacionAuditoria">
+        <MappingFragment StoreEntitySet="AUD_CalificacionAuditoria">
+          <ScalarProperty Name="calificacionAuditoriaId" ColumnName="calificacionAuditoriaId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CartaGarantia">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CartaGarantia">
+        <MappingFragment StoreEntitySet="AUD_CartaGarantia">
+          <ScalarProperty Name="cartaGarantiaId" ColumnName="cartaGarantiaId" />
+          <ScalarProperty Name="fechaEmision" ColumnName="fechaEmision" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="etapaRegistro" ColumnName="etapaRegistro" />
+          <ScalarProperty Name="entregadoA" ColumnName="entregadoA" />
+          <ScalarProperty Name="nroCartaReferencia" ColumnName="nroCartaReferencia" />
+          <ScalarProperty Name="nroCartaGarantia" ColumnName="nroCartaGarantia" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="estadoCarta" ColumnName="estadoCarta" />
+          <ScalarProperty Name="motivoEmisionId" ColumnName="motivoEmisionId" />
+          <ScalarProperty Name="montoPorFacturar" ColumnName="montoPorFacturar" />
+          <ScalarProperty Name="nroPresupuesto" ColumnName="nroPresupuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CasoMedico">
+        <MappingFragment StoreEntitySet="AUD_CasoMedico">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="nroCasoMedico" ColumnName="nroCasoMedico" />
+          <ScalarProperty Name="posicionAccidentadoId" ColumnName="posicionAccidentadoId" />
+          <ScalarProperty Name="totalMontoCartasGarantia" ColumnName="totalMontoCartasGarantia" />
+          <ScalarProperty Name="montoTotalFacturado" ColumnName="montoTotalFacturado" />
+          <ScalarProperty Name="montoTotalReembolso" ColumnName="montoTotalReembolso" />
+          <ScalarProperty Name="costoSiniestro" ColumnName="costoSiniestro" />
+          <ScalarProperty Name="saldoCobertura" ColumnName="saldoCobertura" />
+          <ScalarProperty Name="totalDiasIncapacidad" ColumnName="totalDiasIncapacidad" />
+          <ScalarProperty Name="totalPorcentajeIncapacidad" ColumnName="totalPorcentajeIncapacidad" />
+          <ScalarProperty Name="siniestroId" ColumnName="siniestroId" />
+          <ScalarProperty Name="medicoAuditorId" ColumnName="medicoAuditorId" />
+          <ScalarProperty Name="fechaRegistroCaso" ColumnName="fechaRegistroCaso" />
+          <ScalarProperty Name="nroPolizaAuditada" ColumnName="nroPolizaAuditada" />
+          <ScalarProperty Name="inicioVigenciaPoliza" ColumnName="inicioVigenciaPoliza" />
+          <ScalarProperty Name="finVigenciaPoliza" ColumnName="finVigenciaPoliza" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="maxDiasIncapacidad" ColumnName="maxDiasIncapacidad" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="flagValidacionCentroMedico" ColumnName="flagValidacionCentroMedico" />
+          <ScalarProperty Name="tipoAtencionId" ColumnName="tipoAtencionId" />
+          <ScalarProperty Name="estadoCasoId" ColumnName="estadoCasoId" />
+          <ScalarProperty Name="calificacionAuditoriaId" ColumnName="calificacionAuditoriaId" />
+          <ScalarProperty Name="valorUIT" ColumnName="valorUIT" />
+          <ScalarProperty Name="periodoLaborable" ColumnName="periodoLaborable" />
+          <ScalarProperty Name="sueldoMinimoVital" ColumnName="sueldoMinimoVital" />
+          <ScalarProperty Name="renumeracionDiaria" ColumnName="renumeracionDiaria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CasoMedicoxTipoAtencion">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CasoMedicoxTipoAtencion">
+        <MappingFragment StoreEntitySet="AUD_CasoMedicoxTipoAtencion">
+          <ScalarProperty Name="tipoAtencionCasoId" ColumnName="tipoAtencionCasoId" />
+          <ScalarProperty Name="tipoAtencionId" ColumnName="tipoAtencionId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupadate" ColumnName="uupadate" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="etapaRegistro" ColumnName="etapaRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CasoMedicoxTipoCobertura">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CasoMedicoxTipoCobertura">
+        <MappingFragment StoreEntitySet="AUD_CasoMedicoxTipoCobertura">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="montoMaximoCobertura" ColumnName="montoMaximoCobertura" />
+          <ScalarProperty Name="nombreCobertura" ColumnName="nombreCobertura" />
+          <ScalarProperty Name="numeroUIT" ColumnName="numeroUIT" />
+          <ScalarProperty Name="valorUIT" ColumnName="valorUIT" />
+          <ScalarProperty Name="etapaRegistro" ColumnName="etapaRegistro" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CategoriaDiagnostico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CategoriaDiagnostico">
+        <MappingFragment StoreEntitySet="AUD_CategoriaDiagnostico">
+          <ScalarProperty Name="categoriaDiagnosticoId" ColumnName="categoriaDiagnosticoId" />
+          <ScalarProperty Name="nombreCategoria" ColumnName="nombreCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CentroMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CentroMedico">
+        <MappingFragment StoreEntitySet="AUD_CentroMedico">
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
+          <ScalarProperty Name="nombreComercial" ColumnName="nombreComercial" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+          <ScalarProperty Name="correoElectronico" ColumnName="correoElectronico" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="tipoCentroMedicoId" ColumnName="tipoCentroMedicoId" />
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+          <ScalarProperty Name="factorConvenioSegus" ColumnName="factorConvenioSegus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CentroMedicoxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CentroMedicoxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_CentroMedicoxCasoMedico">
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="nombreEmergencista" ColumnName="nombreEmergencista" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="motivoTraslado" ColumnName="motivoTraslado" />
+          <ScalarProperty Name="cmpEmergencista" ColumnName="cmpEmergencista" />
+          <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+          <ScalarProperty Name="estadoCambioCentroMedico" ColumnName="estadoCambioCentroMedico" />
+          <ScalarProperty Name="nombreProveedorTraslado" ColumnName="nombreProveedorTraslado" />
+          <ScalarProperty Name="medioTrasladoId" ColumnName="medioTrasladoId" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_CIE">
+      <EntityTypeMapping TypeName="audimedModel.AUD_CIE">
+        <MappingFragment StoreEntitySet="AUD_CIE">
+          <ScalarProperty Name="cieId" ColumnName="cieId" />
+          <ScalarProperty Name="codigoDiagnostico" ColumnName="codigoDiagnostico" />
+          <ScalarProperty Name="diagnostico" ColumnName="diagnostico" />
+          <ScalarProperty Name="categoriaDiagnosticoId" ColumnName="categoriaDiagnosticoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Clase_Vehiculo">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Clase_Vehiculo">
+        <MappingFragment StoreEntitySet="AUD_Clase_Vehiculo">
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+          <ScalarProperty Name="claseVehiculo" ColumnName="claseVehiculo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Cliente">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Cliente">
+        <MappingFragment StoreEntitySet="AUD_Cliente">
+          <ScalarProperty Name="clienteId" ColumnName="clienteId" />
+          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_ConvenioSegus">
+      <EntityTypeMapping TypeName="audimedModel.AUD_ConvenioSegus">
+        <MappingFragment StoreEntitySet="AUD_ConvenioSegus">
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="examenSegusId" ColumnName="examenSegusId" />
+          <ScalarProperty Name="precioExamen" ColumnName="precioExamen" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Diagnosticos">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Diagnosticos">
+        <MappingFragment StoreEntitySet="AUD_Diagnosticos">
+          <ScalarProperty Name="diagnosticoId" ColumnName="diagnosticoId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="cieId" ColumnName="cieId" />
+          <ScalarProperty Name="tipoDiagnosticoId" ColumnName="tipoDiagnosticoId" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="prioridadDiagnosticoId" ColumnName="prioridadDiagnosticoId" />
+          <ScalarProperty Name="codigoDiagnostico" ColumnName="codigoDiagnostico" />
+          <ScalarProperty Name="nombreDiagnostico" ColumnName="nombreDiagnostico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_DiagnosticoxInvalidez">
+      <EntityTypeMapping TypeName="audimedModel.AUD_DiagnosticoxInvalidez">
+        <MappingFragment StoreEntitySet="AUD_DiagnosticoxInvalidez">
+          <ScalarProperty Name="cieId" ColumnName="cieId" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="invalidezCasoId" ColumnName="invalidezCasoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_DocumentoxInvalidez">
+      <EntityTypeMapping TypeName="audimedModel.AUD_DocumentoxInvalidez">
+        <MappingFragment StoreEntitySet="AUD_DocumentoxInvalidez">
+          <ScalarProperty Name="docInvalidezId" ColumnName="docInvalidezId" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+          <ScalarProperty Name="nombreArchivo" ColumnName="nombreArchivo" />
+          <ScalarProperty Name="tipoArchivo" ColumnName="tipoArchivo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="invelidezCasoId" ColumnName="invelidezCasoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Estado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Estado">
+        <MappingFragment StoreEntitySet="AUD_Estado">
+          <ScalarProperty Name="estadoCasoId" ColumnName="estadoCasoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_EstadoLesionado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_EstadoLesionado">
+        <MappingFragment StoreEntitySet="AUD_EstadoLesionado">
+          <ScalarProperty Name="estadoLesionadoId" ColumnName="estadoLesionadoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_EstadoProcuraduria">
+      <EntityTypeMapping TypeName="audimedModel.AUD_EstadoProcuraduria">
+        <MappingFragment StoreEntitySet="AUD_EstadoProcuraduria">
+          <ScalarProperty Name="estadoProcuraduriaId" ColumnName="estadoProcuraduriaId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_EstadoxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_EstadoxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_EstadoxCasoMedico">
+          <ScalarProperty Name="estadoCasoMedicoId" ColumnName="estadoCasoMedicoId" />
+          <ScalarProperty Name="estadoCasoId" ColumnName="estadoCasoId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="comentarioCambioEstado" ColumnName="comentarioCambioEstado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_ExamenMinsa">
+      <EntityTypeMapping TypeName="audimedModel.AUD_ExamenMinsa">
+        <MappingFragment StoreEntitySet="AUD_ExamenMinsa">
+          <ScalarProperty Name="examenMinsaId" ColumnName="examenMinsaId" />
+          <ScalarProperty Name="precioExamen" ColumnName="precioExamen" />
+          <ScalarProperty Name="tarifarioMinsaId" ColumnName="tarifarioMinsaId" />
+          <ScalarProperty Name="nombreExamenMinsa" ColumnName="nombreExamenMinsa" />
+          <ScalarProperty Name="codigoExamenMinsa" ColumnName="codigoExamenMinsa" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_ExamenSegus">
+      <EntityTypeMapping TypeName="audimedModel.AUD_ExamenSegus">
+        <MappingFragment StoreEntitySet="AUD_ExamenSegus">
+          <ScalarProperty Name="examenSegusId" ColumnName="examenSegusId" />
+          <ScalarProperty Name="tarifarioSEGUSid" ColumnName="tarifarioSEGUSid" />
+          <ScalarProperty Name="nombreExamenSegus" ColumnName="nombreExamenSegus" />
+          <ScalarProperty Name="valorExamen" ColumnName="valorExamen" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_ExamenxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_ExamenxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_ExamenxCasoMedico">
+          <ScalarProperty Name="examenCasoMedicoId" ColumnName="examenCasoMedicoId" />
+          <ScalarProperty Name="examenSegusId" ColumnName="examenSegusId" />
+          <ScalarProperty Name="examenMinsaId" ColumnName="examenMinsaId" />
+          <ScalarProperty Name="cantidadExamenes" ColumnName="cantidadExamenes" />
+          <ScalarProperty Name="precioExamen" ColumnName="precioExamen" />
+          <ScalarProperty Name="fechaExamen" ColumnName="fechaExamen" />
+          <ScalarProperty Name="fechaExamenProgramado" ColumnName="fechaExamenProgramado" />
+          <ScalarProperty Name="estadoExamen" ColumnName="estadoExamen" />
+          <ScalarProperty Name="resultadoExamen" ColumnName="resultadoExamen" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="flagObservado" ColumnName="flagObservado" />
+          <ScalarProperty Name="nombreExamenMedico" ColumnName="nombreExamenMedico" />
+          <ScalarProperty Name="codigoExamen" ColumnName="codigoExamen" />
+          <ScalarProperty Name="categoriaExamen" ColumnName="categoriaExamen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_FichaCartasReservas">
+      <EntityTypeMapping TypeName="audimedModel.AUD_FichaCartasReservas">
+        <MappingFragment StoreEntitySet="AUD_FichaCartasReservas">
+          <ScalarProperty Name="emisionCartaGarantia" ColumnName="emisionCartaGarantia" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="reservaGastosMedicos" ColumnName="reservaGastosMedicos" />
+          <ScalarProperty Name="reservaGastosMuerte" ColumnName="reservaGastosMuerte" />
+          <ScalarProperty Name="reservaGastosSepelio" ColumnName="reservaGastosSepelio" />
+          <ScalarProperty Name="reservaGastosInvalidez" ColumnName="reservaGastosInvalidez" />
+          <ScalarProperty Name="reservaGastosIncapacidad" ColumnName="reservaGastosIncapacidad" />
+          <ScalarProperty Name="diasIncapacidad" ColumnName="diasIncapacidad" />
+          <ScalarProperty Name="porcentajeInvalidez" ColumnName="porcentajeInvalidez" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="comentarioNoEmisionCG" ColumnName="comentarioNoEmisionCG" />
+          <ScalarProperty Name="fichaReservaId" ColumnName="fichaReservaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_FichaExamenesDiagnosticos">
+      <EntityTypeMapping TypeName="audimedModel.AUD_FichaExamenesDiagnosticos">
+        <MappingFragment StoreEntitySet="AUD_FichaExamenesDiagnosticos">
+          <ScalarProperty Name="tratamientosRealizados" ColumnName="tratamientosRealizados" />
+          <ScalarProperty Name="comentarios" ColumnName="comentarios" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_FichaObservacion">
+      <EntityTypeMapping TypeName="audimedModel.AUD_FichaObservacion">
+        <MappingFragment StoreEntitySet="AUD_FichaObservacion">
+          <ScalarProperty Name="observacionGeneral" ColumnName="observacionGeneral" />
+          <ScalarProperty Name="flagAlerta" ColumnName="flagAlerta" />
+          <ScalarProperty Name="comentarioAlerta" ColumnName="comentarioAlerta" />
+          <ScalarProperty Name="comentarioRespuestaAlerta" ColumnName="comentarioRespuestaAlerta" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="tipoAlertaCasoMedicoId" ColumnName="tipoAlertaCasoMedicoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Invalidez">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Invalidez">
+        <MappingFragment StoreEntitySet="AUD_Invalidez">
+          <ScalarProperty Name="invalidezId" ColumnName="invalidezId" />
+          <ScalarProperty Name="invalidez" ColumnName="invalidez" />
+          <ScalarProperty Name="porcentajePrincipal" ColumnName="porcentajePrincipal" />
+          <ScalarProperty Name="porcentajeSecundario" ColumnName="porcentajeSecundario" />
+          <ScalarProperty Name="tipoInvalidez" ColumnName="tipoInvalidez" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_InvalidezxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_InvalidezxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_InvalidezxCasoMedico">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="invalidezId" ColumnName="invalidezId" />
+          <ScalarProperty Name="causaInvalidez" ColumnName="causaInvalidez" />
+          <ScalarProperty Name="medicoTratante" ColumnName="medicoTratante" />
+          <ScalarProperty Name="CMP" ColumnName="CMP" />
+          <ScalarProperty Name="nombreMedicoAuditor" ColumnName="nombreMedicoAuditor" />
+          <ScalarProperty Name="opinionMedicoAuditor" ColumnName="opinionMedicoAuditor" />
+          <ScalarProperty Name="porcentajeInvalidez" ColumnName="porcentajeInvalidez" />
+          <ScalarProperty Name="nombreMedicoAuditorInterno" ColumnName="nombreMedicoAuditorInterno" />
+          <ScalarProperty Name="condicion" ColumnName="condicion" />
+          <ScalarProperty Name="opinionMedicoAuditorInterno" ColumnName="opinionMedicoAuditorInterno" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="tipoReservaCasoId" ColumnName="tipoReservaCasoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Lesionado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Lesionado">
+        <MappingFragment StoreEntitySet="AUD_Lesionado">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="nombreLesionado" ColumnName="nombreLesionado" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="tdocidId" ColumnName="tdocidId" />
+          <ScalarProperty Name="numDocId" ColumnName="numDocId" />
+          <ScalarProperty Name="centroLaboral" ColumnName="centroLaboral" />
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+          <ScalarProperty Name="antecedentesPatologicos" ColumnName="antecedentesPatologicos" />
+          <ScalarProperty Name="nroHistCli" ColumnName="nroHistCli" />
+          <ScalarProperty Name="flagEntrevistado" ColumnName="flagEntrevistado" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="tipoEdadId" ColumnName="tipoEdadId" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="estadoLesionadoId" ColumnName="estadoLesionadoId" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Marca_Vehiculo">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Marca_Vehiculo">
+        <MappingFragment StoreEntitySet="AUD_Marca_Vehiculo">
+          <ScalarProperty Name="marcaVehiculoId" ColumnName="marcaVehiculoId" />
+          <ScalarProperty Name="marcaVehiculo" ColumnName="marcaVehiculo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MedicoAuditor">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MedicoAuditor">
+        <MappingFragment StoreEntitySet="AUD_MedicoAuditor">
+          <ScalarProperty Name="medicoAuditorId" ColumnName="medicoAuditorId" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="upadate" ColumnName="upadate" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="nombreMedAuditor" ColumnName="nombreMedAuditor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MedicoAuditorxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MedicoAuditorxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_MedicoAuditorxCasoMedico">
+          <ScalarProperty Name="medicoAuditorId" ColumnName="medicoAuditorId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="fechaAsignacion" ColumnName="fechaAsignacion" />
+          <ScalarProperty Name="motivoReemplazo" ColumnName="motivoReemplazo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaNotificacionMedico" ColumnName="fechaNotificacionMedico" />
+          <ScalarProperty Name="fechaInicioAuditoria" ColumnName="fechaInicioAuditoria" />
+          <ScalarProperty Name="siniestroId" ColumnName="siniestroId" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MedioEvacuacion">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MedioEvacuacion">
+        <MappingFragment StoreEntitySet="AUD_MedioEvacuacion">
+          <ScalarProperty Name="medioEvacuacionId" ColumnName="medioEvacuacionId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MedioTraslado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MedioTraslado">
+        <MappingFragment StoreEntitySet="AUD_MedioTraslado">
+          <ScalarProperty Name="medioTrasladoId" ColumnName="medioTrasladoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Modelo_Vehiculo">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Modelo_Vehiculo">
+        <MappingFragment StoreEntitySet="AUD_Modelo_Vehiculo">
+          <ScalarProperty Name="marcaVehiculoId" ColumnName="marcaVehiculoId" />
+          <ScalarProperty Name="modeloVehiculoId" ColumnName="modeloVehiculoId" />
+          <ScalarProperty Name="claseVehiculoId" ColumnName="claseVehiculoId" />
+          <ScalarProperty Name="modeloVehiculo" ColumnName="modeloVehiculo" />
+          <ScalarProperty Name="inicioVigencia" ColumnName="inicioVigencia" />
+          <ScalarProperty Name="finVigencia" ColumnName="finVigencia" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MontoCobertura">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MontoCobertura">
+        <MappingFragment StoreEntitySet="AUD_MontoCobertura">
+          <ScalarProperty Name="montoCoberturaId" ColumnName="montoCoberturaId" />
+          <ScalarProperty Name="nombreCobertura" ColumnName="nombreCobertura" />
+          <ScalarProperty Name="numeroUIT" ColumnName="numeroUIT" />
+          <ScalarProperty Name="valorUIT" ColumnName="valorUIT" />
+          <ScalarProperty Name="montoMaximoCobertura" ColumnName="montoMaximoCobertura" />
+          <ScalarProperty Name="fechaInicioVigencia" ColumnName="fechaInicioVigencia" />
+          <ScalarProperty Name="fechaFinVigencia" ColumnName="fechaFinVigencia" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MotivoEmision">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MotivoEmision">
+        <MappingFragment StoreEntitySet="AUD_MotivoEmision">
+          <ScalarProperty Name="montoEstimado" ColumnName="montoEstimado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="motivoEmisionId" ColumnName="motivoEmisionId" />
+          <ScalarProperty Name="TipoMotivoEmision" ColumnName="TipoMotivoEmision" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_MotivoRegistro">
+      <EntityTypeMapping TypeName="audimedModel.AUD_MotivoRegistro">
+        <MappingFragment StoreEntitySet="AUD_MotivoRegistro">
+          <ScalarProperty Name="motivoRegistroId" ColumnName="motivoRegistroId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_ParametrosAuditoria">
+      <EntityTypeMapping TypeName="audimedModel.AUD_ParametrosAuditoria">
+        <MappingFragment StoreEntitySet="AUD_ParametrosAuditoria">
+          <ScalarProperty Name="parametroId" ColumnName="parametroId" />
+          <ScalarProperty Name="inicioVigencia" ColumnName="inicioVigencia" />
+          <ScalarProperty Name="finVigencia" ColumnName="finVigencia" />
+          <ScalarProperty Name="valorUIT" ColumnName="valorUIT" />
+          <ScalarProperty Name="periodoLaborable" ColumnName="periodoLaborable" />
+          <ScalarProperty Name="sueldoMinimoVital" ColumnName="sueldoMinimoVital" />
+          <ScalarProperty Name="maxDiasIncapacidad" ColumnName="maxDiasIncapacidad" />
+          <ScalarProperty Name="renumeracionDiaria" ColumnName="renumeracionDiaria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_PersonaAutorizacionTraslado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_PersonaAutorizacionTraslado">
+        <MappingFragment StoreEntitySet="AUD_PersonaAutorizacionTraslado">
+          <ScalarProperty Name="personaAutorizoTrasladoId" ColumnName="personaAutorizoTrasladoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_PosicionAccidentado">
+      <EntityTypeMapping TypeName="audimedModel.AUD_PosicionAccidentado">
+        <MappingFragment StoreEntitySet="AUD_PosicionAccidentado">
+          <ScalarProperty Name="posicionAccidentadoId" ColumnName="posicionAccidentadoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_PrioridadDiagnostico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_PrioridadDiagnostico">
+        <MappingFragment StoreEntitySet="AUD_PrioridadDiagnostico">
+          <ScalarProperty Name="prioridadDiagnosticoId" ColumnName="prioridadDiagnosticoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Siniestro">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Siniestro">
+        <MappingFragment StoreEntitySet="AUD_Siniestro">
+          <ScalarProperty Name="siniestroId" ColumnName="siniestroId" />
+          <ScalarProperty Name="numPlaca" ColumnName="numPlaca" />
+          <ScalarProperty Name="fechaSiniestro" ColumnName="fechaSiniestro" />
+          <ScalarProperty Name="fechaActivService" ColumnName="fechaActivService" />
+          <ScalarProperty Name="numPoliza" ColumnName="numPoliza" />
+          <ScalarProperty Name="numCertificadoSOAT" ColumnName="numCertificadoSOAT" />
+          <ScalarProperty Name="usoVehiculo" ColumnName="usoVehiculo" />
+          <ScalarProperty Name="numSiniestro" ColumnName="numSiniestro" />
+          <ScalarProperty Name="numAtencion" ColumnName="numAtencion" />
+          <ScalarProperty Name="usoVehiculoSiniestro" ColumnName="usoVehiculoSiniestro" />
+          <ScalarProperty Name="ubigeoId" ColumnName="ubigeoId" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="inicioVigenciaPoliza" ColumnName="inicioVigenciaPoliza" />
+          <ScalarProperty Name="finVigenciaPoliza" ColumnName="finVigenciaPoliza" />
+          <ScalarProperty Name="nombreNotificante" ColumnName="nombreNotificante" />
+          <ScalarProperty Name="numDocId" ColumnName="numDocId" />
+          <ScalarProperty Name="telefonoNotificante" ColumnName="telefonoNotificante" />
+          <ScalarProperty Name="parentescoNotificante" ColumnName="parentescoNotificante" />
+          <ScalarProperty Name="nombreComisaria" ColumnName="nombreComisaria" />
+          <ScalarProperty Name="fechaDenuncia" ColumnName="fechaDenuncia" />
+          <ScalarProperty Name="cantidadLesionados" ColumnName="cantidadLesionados" />
+          <ScalarProperty Name="nombreConductor" ColumnName="nombreConductor" />
+          <ScalarProperty Name="clienteId" ColumnName="clienteId" />
+          <ScalarProperty Name="telefonoConductor" ColumnName="telefonoConductor" />
+          <ScalarProperty Name="fechaComunicacion" ColumnName="fechaComunicacion" />
+          <ScalarProperty Name="analistaSOAT" ColumnName="analistaSOAT" />
+          <ScalarProperty Name="nombreProcuradorAsignado" ColumnName="nombreProcuradorAsignado" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="tipoPolizaId" ColumnName="tipoPolizaId" />
+          <ScalarProperty Name="motivoRegistroId" ColumnName="motivoRegistroId" />
+          <ScalarProperty Name="tipoComunicacionId" ColumnName="tipoComunicacionId" />
+          <ScalarProperty Name="tipoSiniestroId" ColumnName="tipoSiniestroId" />
+          <ScalarProperty Name="estadoProcuraduriaId" ColumnName="estadoProcuraduriaId" />
+          <ScalarProperty Name="modeloVehiculoId" ColumnName="modeloVehiculoId" />
+          <ScalarProperty Name="tdocId" ColumnName="tdocId" />
+          <ScalarProperty Name="contratanteSoat" ColumnName="contratanteSoat" />
+          <ScalarProperty Name="telefonoContratante" ColumnName="telefonoContratante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TarifarioMinsa">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TarifarioMinsa">
+        <MappingFragment StoreEntitySet="AUD_TarifarioMinsa">
+          <ScalarProperty Name="tarifarioMinsaId" ColumnName="tarifarioMinsaId" />
+          <ScalarProperty Name="predecesorId" ColumnName="predecesorId" />
+          <ScalarProperty Name="nivelTipo" ColumnName="nivelTipo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TarifarioSegus">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TarifarioSegus">
+        <MappingFragment StoreEntitySet="AUD_TarifarioSegus">
+          <ScalarProperty Name="tarifarioSEGUSid" ColumnName="tarifarioSEGUSid" />
+          <ScalarProperty Name="predecesorId" ColumnName="predecesorId" />
+          <ScalarProperty Name="nombreTarifario" ColumnName="nombreTarifario" />
+          <ScalarProperty Name="nivelTipo" ColumnName="nivelTipo" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_Terapias">
+      <EntityTypeMapping TypeName="audimedModel.AUD_Terapias">
+        <MappingFragment StoreEntitySet="AUD_Terapias">
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="codigoTerapia" ColumnName="codigoTerapia" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="proveedor" ColumnName="proveedor" />
+          <ScalarProperty Name="tipoTerapia" ColumnName="tipoTerapia" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoAlertaCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoAlertaCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_TipoAlertaCasoMedico">
+          <ScalarProperty Name="tipoAlertaCasoMedicoId" ColumnName="tipoAlertaCasoMedicoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoAlertaxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoAlertaxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_TipoAlertaxCasoMedico">
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="tipoAlertaCasoMedicoId" ColumnName="tipoAlertaCasoMedicoId" />
+          <ScalarProperty Name="alertaCasoId" ColumnName="alertaCasoId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="uaudit" ColumnName="uaudit" />
+          <ScalarProperty Name="descripcionAtencion" ColumnName="descripcionAtencion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descripcionAlerta" ColumnName="descripcionAlerta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoAtencion">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoAtencion">
+        <MappingFragment StoreEntitySet="AUD_TipoAtencion">
+          <ScalarProperty Name="tipoAtencionId" ColumnName="tipoAtencionId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="prioridad" ColumnName="prioridad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoCentroMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoCentroMedico">
+        <MappingFragment StoreEntitySet="AUD_TipoCentroMedico">
+          <ScalarProperty Name="tipoCentroMedicoId" ColumnName="tipoCentroMedicoId" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoCobertura">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoCobertura">
+        <MappingFragment StoreEntitySet="AUD_TipoCobertura">
+          <ScalarProperty Name="nombreCobertura" ColumnName="nombreCobertura" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoComunicacion">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoComunicacion">
+        <MappingFragment StoreEntitySet="AUD_TipoComunicacion">
+          <ScalarProperty Name="tipoComunicacionId" ColumnName="tipoComunicacionId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoDiagnostico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoDiagnostico">
+        <MappingFragment StoreEntitySet="AUD_TipoDiagnostico">
+          <ScalarProperty Name="tipoDiagnosticoId" ColumnName="tipoDiagnosticoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoEdad">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoEdad">
+        <MappingFragment StoreEntitySet="AUD_TipoEdad">
+          <ScalarProperty Name="tipoEdadId" ColumnName="tipoEdadId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoInvalidez">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoInvalidez">
+        <MappingFragment StoreEntitySet="AUD_TipoInvalidez">
+          <ScalarProperty Name="tipoInvalidez" ColumnName="tipoInvalidez" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoMotivo">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoMotivo">
+        <MappingFragment StoreEntitySet="AUD_TipoMotivo">
+          <ScalarProperty Name="TipoMotivoEmision" ColumnName="TipoMotivoEmision" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoPoliza">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoPoliza">
+        <MappingFragment StoreEntitySet="AUD_TipoPoliza">
+          <ScalarProperty Name="tipoPolizaId" ColumnName="tipoPolizaId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoReservaxCasoMedico">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoReservaxCasoMedico">
+        <MappingFragment StoreEntitySet="AUD_TipoReservaxCasoMedico">
+          <ScalarProperty Name="tipoReservaCasoId" ColumnName="tipoReservaCasoId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="montoReserva" ColumnName="montoReserva" />
+          <ScalarProperty Name="diasIncapacidadn" ColumnName="diasIncapacidadn" />
+          <ScalarProperty Name="porcentajeInvalidez" ColumnName="porcentajeInvalidez" />
+          <ScalarProperty Name="nombreCobertura" ColumnName="nombreCobertura" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_TipoSiniestro">
+      <EntityTypeMapping TypeName="audimedModel.AUD_TipoSiniestro">
+        <MappingFragment StoreEntitySet="AUD_TipoSiniestro">
+          <ScalarProperty Name="tipoSiniestroId" ColumnName="tipoSiniestroId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUD_VisitaMedica">
+      <EntityTypeMapping TypeName="audimedModel.AUD_VisitaMedica">
+        <MappingFragment StoreEntitySet="AUD_VisitaMedica">
+          <ScalarProperty Name="visitaMedicaId" ColumnName="visitaMedicaId" />
+          <ScalarProperty Name="casoMedicoId" ColumnName="casoMedicoId" />
+          <ScalarProperty Name="tipoVisita" ColumnName="tipoVisita" />
+          <ScalarProperty Name="fechaVisita" ColumnName="fechaVisita" />
+          <ScalarProperty Name="fechaReprogramacion" ColumnName="fechaReprogramacion" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="fechaRealizacion" ColumnName="fechaRealizacion" />
+          <ScalarProperty Name="estadoVisita" ColumnName="estadoVisita" />
+          <ScalarProperty Name="centroMedicoId" ColumnName="centroMedicoId" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ampliatorioId" ColumnName="ampliatorioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Acceso">
+      <EntityTypeMapping TypeName="audimedModel.Sys_Acceso">
+        <MappingFragment StoreEntitySet="Sys_Acceso">
+          <ScalarProperty Name="funcionalidadId" ColumnName="funcionalidadId" />
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_AccesoUsuario">
+      <EntityTypeMapping TypeName="audimedModel.Sys_AccesoUsuario">
+        <MappingFragment StoreEntitySet="Sys_AccesoUsuario">
+          <ScalarProperty Name="funcionalidadId" ColumnName="funcionalidadId" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="usuarioId" ColumnName="usuarioId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_App">
+      <EntityTypeMapping TypeName="audimedModel.Sys_App">
+        <MappingFragment StoreEntitySet="Sys_App">
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="app" ColumnName="app" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Funcionalidad">
+      <EntityTypeMapping TypeName="audimedModel.Sys_Funcionalidad">
+        <MappingFragment StoreEntitySet="Sys_Funcionalidad">
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="funcionalidadId" ColumnName="funcionalidadId" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="funcionalidad" ColumnName="funcionalidad" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Rol">
+      <EntityTypeMapping TypeName="audimedModel.Sys_Rol">
+        <MappingFragment StoreEntitySet="Sys_Rol">
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+          <ScalarProperty Name="appid" ColumnName="appid" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_RolUsuario">
+      <EntityTypeMapping TypeName="audimedModel.Sys_RolUsuario">
+        <MappingFragment StoreEntitySet="Sys_RolUsuario">
+          <ScalarProperty Name="usuarioId" ColumnName="usuarioId" />
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+          <ScalarProperty Name="appId" ColumnName="appId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Usuario">
+      <EntityTypeMapping TypeName="audimedModel.Sys_Usuario">
+        <MappingFragment StoreEntitySet="Sys_Usuario">
+          <ScalarProperty Name="usuarioId" ColumnName="usuarioId" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="fupdate" ColumnName="fupdate" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="pc" ColumnName="pc" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ucrea" ColumnName="ucrea" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="uupdate" ColumnName="uupdate" />
+          <ScalarProperty Name="ciaId" ColumnName="ciaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="AF2B2E91-D95B-47CF-95DF-398BF0FC805F" ModuleId="web" />
+  <Module PersistentId="6A5938DD-C07E-457E-A390-145C5A72B01F" ModuleId="DAL" />
+  <Module PersistentId="F9090B51-C1B0-4783-9D01-C783ED84E08F" ModuleId="web_1" />
+  <Module PersistentId="FAB2D375-26D0-4335-8EEE-40E765451788" ModuleId="BLL" />
+</Modules>

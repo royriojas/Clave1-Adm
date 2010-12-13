@@ -1,0 +1,5 @@
+C:\Projects\Amed\Clave1-Adm\BLL\BLL\bin\Debug\BLL.dll
+C:\Projects\Amed\Clave1-Adm\BLL\BLL\bin\Debug\BLL.pdb
+C:\Projects\Amed\Clave1-Adm\BLL\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Amed\Clave1-Adm\BLL\BLL\obj\Debug\BLL.dll
+C:\Projects\Amed\Clave1-Adm\BLL\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,53 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="6A5938DD-C07E-457E-A390-145C5A72B01F/f:App.Config" caret="475" fromTop="4" />
+      <File id="F9090B51-C1B0-4783-9D01-C783ED84E08F/f:Default.aspx" caret="734" fromTop="17" />
+      <File id="6A5938DD-C07E-457E-A390-145C5A72B01F/f:Model1.Designer.cs" caret="559619" fromTop="0" />
+      <File id="FAB2D375-26D0-4335-8EEE-40E765451788/d:Contracts/f:IUserManager.cs" caret="435" fromTop="21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="6A5938DD-C07E-457E-A390-145C5A72B01F/f:App.Config" caret="82" fromTop="3" />
+      <File id="FAB2D375-26D0-4335-8EEE-40E765451788/d:Contracts/f:IUserManager.cs" caret="28" fromTop="0" />
+      <File id="6A5938DD-C07E-457E-A390-145C5A72B01F/f:Model1.Designer.cs" caret="558573" fromTop="7" />
+      <File id="FAB2D375-26D0-4335-8EEE-40E765451788/d:Contracts/f:IUserManager.cs" caret="444" fromTop="12" />
+      <File id="FAB2D375-26D0-4335-8EEE-40E765451788/d:Contracts/f:IUserManager.cs" caret="435" fromTop="21" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="0" />
+      <Item value="DAL" priority="2" />
+      <Item value="Sys_Usuario`0" priority="0" />
+      <Item value="UserManager" priority="0" />
+      <Item value="interface" priority="2" />
+      <Item value="AUD_CasoMedico`0" priority="0" />
+      <Item value="public" priority="4" />
+      <Item value="void" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="prop" priority="2" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="String`0" priority="2" />
+      <Item value="Boolean`0" priority="0" />
+      <Item value="string" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

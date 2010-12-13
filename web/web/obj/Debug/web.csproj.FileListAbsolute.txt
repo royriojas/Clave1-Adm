@@ -1,0 +1,5 @@
+C:\Projects\Amed\Clave1-Adm\web\web\bin\web.dll
+C:\Projects\Amed\Clave1-Adm\web\web\bin\web.pdb
+C:\Projects\Amed\Clave1-Adm\web\web\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Amed\Clave1-Adm\web\web\obj\Debug\web.dll
+C:\Projects\Amed\Clave1-Adm\web\web\obj\Debug\web.pdb

@@ -1,0 +1,6 @@
+C:\Projects\Amed\Clave1-Adm\DAL\bin\Debug\DAL.dll.config
+C:\Projects\Amed\Clave1-Adm\DAL\bin\Debug\DAL.dll
+C:\Projects\Amed\Clave1-Adm\DAL\bin\Debug\DAL.pdb
+C:\Projects\Amed\Clave1-Adm\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Amed\Clave1-Adm\DAL\obj\Debug\DAL.dll
+C:\Projects\Amed\Clave1-Adm\DAL\obj\Debug\DAL.pdb

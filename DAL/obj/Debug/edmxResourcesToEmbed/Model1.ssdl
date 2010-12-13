@@ -1,0 +1,3394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="audimedModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="audimedModelStoreContainer">
+    <EntitySet Name="Adm_AnhoVehiculo" EntityType="audimedModel.Store.Adm_AnhoVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Asegurado" EntityType="audimedModel.Store.Adm_Asegurado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Aseguradora" EntityType="audimedModel.Store.Adm_Aseguradora" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Beneficiario" EntityType="audimedModel.Store.Adm_Beneficiario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Broker" EntityType="audimedModel.Store.Adm_Broker" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_ClaseVehiculo" EntityType="audimedModel.Store.Adm_ClaseVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Cliente" EntityType="audimedModel.Store.Adm_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Direccion" EntityType="audimedModel.Store.Adm_Direccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_DocId" EntityType="audimedModel.Store.Adm_DocId" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Empleado" EntityType="audimedModel.Store.Adm_Empleado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_EstadoCivil" EntityType="audimedModel.Store.Adm_EstadoCivil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Inspector" EntityType="audimedModel.Store.Adm_Inspector" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_MarcaVehiculo" EntityType="audimedModel.Store.Adm_MarcaVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_ModeloVehiculo" EntityType="audimedModel.Store.Adm_ModeloVehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Moneda" EntityType="audimedModel.Store.Adm_Moneda" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Persona" EntityType="audimedModel.Store.Adm_Persona" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_PunraPrimra" EntityType="audimedModel.Store.Adm_PunraPrimra" store:Type="Tables" store:Schema="dbo" store:Name="Adm_PunraPrimra">
+      <DefiningQuery>SELECT 
+      [Adm_PunraPrimra].[primeraLetra] AS [primeraLetra], 
+      [Adm_PunraPrimra].[claseVehiculoId] AS [claseVehiculoId]
+      FROM [dbo].[Adm_PunraPrimra] AS [Adm_PunraPrimra]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Adm_PunraSegunda" EntityType="audimedModel.Store.Adm_PunraSegunda" store:Type="Tables" store:Schema="dbo" store:Name="Adm_PunraSegunda">
+      <DefiningQuery>SELECT 
+      [Adm_PunraSegunda].[segundaLetra] AS [segundaLetra], 
+      [Adm_PunraSegunda].[ubigeoId] AS [ubigeoId]
+      FROM [dbo].[Adm_PunraSegunda] AS [Adm_PunraSegunda]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Adm_TCambio" EntityType="audimedModel.Store.Adm_TCambio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TComunicacion" EntityType="audimedModel.Store.Adm_TComunicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TDireccion" EntityType="audimedModel.Store.Adm_TDireccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TDocId" EntityType="audimedModel.Store.Adm_TDocId" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TelefonoPersona" EntityType="audimedModel.Store.Adm_TelefonoPersona" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TPersona" EntityType="audimedModel.Store.Adm_TPersona" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_TTelefono" EntityType="audimedModel.Store.Adm_TTelefono" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Ubigeo" EntityType="audimedModel.Store.Adm_Ubigeo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AltaMedica" EntityType="audimedModel.Store.AUD_AltaMedica" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AmpConsultaAmbulatoria" EntityType="audimedModel.Store.AUD_AmpConsultaAmbulatoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AmpliatorioMedico" EntityType="audimedModel.Store.AUD_AmpliatorioMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AmpMateriaOsteosintesis" EntityType="audimedModel.Store.AUD_AmpMateriaOsteosintesis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AmpPermanenciaHospitalaria" EntityType="audimedModel.Store.AUD_AmpPermanenciaHospitalaria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AnexoSiniestro" EntityType="audimedModel.Store.AUD_AnexoSiniestro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AtencionAnterior" EntityType="audimedModel.Store.AUD_AtencionAnterior" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_AtencionInicial" EntityType="audimedModel.Store.AUD_AtencionInicial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CalificacionAuditoria" EntityType="audimedModel.Store.AUD_CalificacionAuditoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CartaGarantia" EntityType="audimedModel.Store.AUD_CartaGarantia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CasoMedico" EntityType="audimedModel.Store.AUD_CasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CasoMedicoxTipoAtencion" EntityType="audimedModel.Store.AUD_CasoMedicoxTipoAtencion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CasoMedicoxTipoCobertura" EntityType="audimedModel.Store.AUD_CasoMedicoxTipoCobertura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CategoriaDiagnostico" EntityType="audimedModel.Store.AUD_CategoriaDiagnostico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CentroMedico" EntityType="audimedModel.Store.AUD_CentroMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CentroMedicoxCasoMedico" EntityType="audimedModel.Store.AUD_CentroMedicoxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_CIE" EntityType="audimedModel.Store.AUD_CIE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Clase_Vehiculo" EntityType="audimedModel.Store.AUD_Clase_Vehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Cliente" EntityType="audimedModel.Store.AUD_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_ConvenioSegus" EntityType="audimedModel.Store.AUD_ConvenioSegus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Diagnosticos" EntityType="audimedModel.Store.AUD_Diagnosticos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_DiagnosticoxInvalidez" EntityType="audimedModel.Store.AUD_DiagnosticoxInvalidez" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_DocumentoxInvalidez" EntityType="audimedModel.Store.AUD_DocumentoxInvalidez" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Estado" EntityType="audimedModel.Store.AUD_Estado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_EstadoLesionado" EntityType="audimedModel.Store.AUD_EstadoLesionado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_EstadoProcuraduria" EntityType="audimedModel.Store.AUD_EstadoProcuraduria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_EstadoxCasoMedico" EntityType="audimedModel.Store.AUD_EstadoxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_ExamenMinsa" EntityType="audimedModel.Store.AUD_ExamenMinsa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_ExamenSegus" EntityType="audimedModel.Store.AUD_ExamenSegus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_ExamenxCasoMedico" EntityType="audimedModel.Store.AUD_ExamenxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_FichaCartasReservas" EntityType="audimedModel.Store.AUD_FichaCartasReservas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_FichaExamenesDiagnosticos" EntityType="audimedModel.Store.AUD_FichaExamenesDiagnosticos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_FichaObservacion" EntityType="audimedModel.Store.AUD_FichaObservacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Invalidez" EntityType="audimedModel.Store.AUD_Invalidez" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_InvalidezxCasoMedico" EntityType="audimedModel.Store.AUD_InvalidezxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Lesionado" EntityType="audimedModel.Store.AUD_Lesionado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Marca_Vehiculo" EntityType="audimedModel.Store.AUD_Marca_Vehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MedicoAuditor" EntityType="audimedModel.Store.AUD_MedicoAuditor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MedicoAuditorxCasoMedico" EntityType="audimedModel.Store.AUD_MedicoAuditorxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MedioEvacuacion" EntityType="audimedModel.Store.AUD_MedioEvacuacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MedioTraslado" EntityType="audimedModel.Store.AUD_MedioTraslado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Modelo_Vehiculo" EntityType="audimedModel.Store.AUD_Modelo_Vehiculo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MontoCobertura" EntityType="audimedModel.Store.AUD_MontoCobertura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MotivoEmision" EntityType="audimedModel.Store.AUD_MotivoEmision" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_MotivoRegistro" EntityType="audimedModel.Store.AUD_MotivoRegistro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_ParametrosAuditoria" EntityType="audimedModel.Store.AUD_ParametrosAuditoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_PersonaAutorizacionTraslado" EntityType="audimedModel.Store.AUD_PersonaAutorizacionTraslado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_PosicionAccidentado" EntityType="audimedModel.Store.AUD_PosicionAccidentado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_PrioridadDiagnostico" EntityType="audimedModel.Store.AUD_PrioridadDiagnostico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Siniestro" EntityType="audimedModel.Store.AUD_Siniestro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TarifarioMinsa" EntityType="audimedModel.Store.AUD_TarifarioMinsa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TarifarioSegus" EntityType="audimedModel.Store.AUD_TarifarioSegus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_Terapias" EntityType="audimedModel.Store.AUD_Terapias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoAlertaCasoMedico" EntityType="audimedModel.Store.AUD_TipoAlertaCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoAlertaxCasoMedico" EntityType="audimedModel.Store.AUD_TipoAlertaxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoAtencion" EntityType="audimedModel.Store.AUD_TipoAtencion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoCentroMedico" EntityType="audimedModel.Store.AUD_TipoCentroMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoCobertura" EntityType="audimedModel.Store.AUD_TipoCobertura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoComunicacion" EntityType="audimedModel.Store.AUD_TipoComunicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoDiagnostico" EntityType="audimedModel.Store.AUD_TipoDiagnostico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoEdad" EntityType="audimedModel.Store.AUD_TipoEdad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoInvalidez" EntityType="audimedModel.Store.AUD_TipoInvalidez" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoMotivo" EntityType="audimedModel.Store.AUD_TipoMotivo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoPoliza" EntityType="audimedModel.Store.AUD_TipoPoliza" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoReservaxCasoMedico" EntityType="audimedModel.Store.AUD_TipoReservaxCasoMedico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_TipoSiniestro" EntityType="audimedModel.Store.AUD_TipoSiniestro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AUD_VisitaMedica" EntityType="audimedModel.Store.AUD_VisitaMedica" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Acceso" EntityType="audimedModel.Store.Sys_Acceso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_AccesoUsuario" EntityType="audimedModel.Store.Sys_AccesoUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_App" EntityType="audimedModel.Store.Sys_App" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Funcionalidad" EntityType="audimedModel.Store.Sys_Funcionalidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Rol" EntityType="audimedModel.Store.Sys_Rol" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_RolUsuario" EntityType="audimedModel.Store.Sys_RolUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sys_Usuario" EntityType="audimedModel.Store.Sys_Usuario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Adm_Asegu__asegu__24927208" Association="audimedModel.Store.FK__Adm_Asegu__asegu__24927208">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Asegurado" EntitySet="Adm_Asegurado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Asegu__perso__60F24029" Association="audimedModel.Store.FK__Adm_Asegu__perso__60F24029">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Aseguradora" EntitySet="Adm_Aseguradora" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Benef__benef__25869641" Association="audimedModel.Store.FK__Adm_Benef__benef__25869641">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Beneficiario" EntitySet="Adm_Beneficiario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Broke__perso__61E66462" Association="audimedModel.Store.FK__Adm_Broke__perso__61E66462">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Broker" EntitySet="Adm_Broker" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Clien__perso__267ABA7A" Association="audimedModel.Store.FK__Adm_Clien__perso__267ABA7A">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Cliente" EntitySet="Adm_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Direc__perso__2B3F6F97" Association="audimedModel.Store.FK__Adm_Direc__perso__2B3F6F97">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Direccion" EntitySet="Adm_Direccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Direc__tdire__2A4B4B5E" Association="audimedModel.Store.FK__Adm_Direc__tdire__2A4B4B5E">
+      <End Role="Adm_TDireccion" EntitySet="Adm_TDireccion" />
+      <End Role="Adm_Direccion" EntitySet="Adm_Direccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Direc__ubige__75AE3144" Association="audimedModel.Store.FK__Adm_Direc__ubige__75AE3144">
+      <End Role="Adm_Ubigeo" EntitySet="Adm_Ubigeo" />
+      <End Role="Adm_Direccion" EntitySet="Adm_Direccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_DocId__perso__2C3393D0" Association="audimedModel.Store.FK__Adm_DocId__perso__2C3393D0">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_DocId" EntitySet="Adm_DocId" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_DocId__tdoci__2D27B809" Association="audimedModel.Store.FK__Adm_DocId__tdoci__2D27B809">
+      <End Role="Adm_TDocId" EntitySet="Adm_TDocId" />
+      <End Role="Adm_DocId" EntitySet="Adm_DocId" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Emple__perso__2E1BDC42" Association="audimedModel.Store.FK__Adm_Emple__perso__2E1BDC42">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Empleado" EntitySet="Adm_Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Model__clase__7A72E661" Association="audimedModel.Store.FK__Adm_Model__clase__7A72E661">
+      <End Role="Adm_ClaseVehiculo" EntitySet="Adm_ClaseVehiculo" />
+      <End Role="Adm_ModeloVehiculo" EntitySet="Adm_ModeloVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Model__marca__7B670A9A" Association="audimedModel.Store.FK__Adm_Model__marca__7B670A9A">
+      <End Role="Adm_MarcaVehiculo" EntitySet="Adm_MarcaVehiculo" />
+      <End Role="Adm_ModeloVehiculo" EntitySet="Adm_ModeloVehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Perso__conta__35BCFE0A" Association="audimedModel.Store.FK__Adm_Perso__conta__35BCFE0A">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Persona1" EntitySet="Adm_Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Perso__estad__33D4B598" Association="audimedModel.Store.FK__Adm_Perso__estad__33D4B598">
+      <End Role="Adm_EstadoCivil" EntitySet="Adm_EstadoCivil" />
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_TCamb__moned__36B12243" Association="audimedModel.Store.FK__Adm_TCamb__moned__36B12243">
+      <End Role="Adm_Moneda" EntitySet="Adm_Moneda" />
+      <End Role="Adm_TCambio" EntitySet="Adm_TCambio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Telef__perso__37A5467C" Association="audimedModel.Store.FK__Adm_Telef__perso__37A5467C">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_TelefonoPersona" EntitySet="Adm_TelefonoPersona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Adm_Telef__ttele__38996AB5" Association="audimedModel.Store.FK__Adm_Telef__ttele__38996AB5">
+      <End Role="Adm_TTelefono" EntitySet="Adm_TTelefono" />
+      <End Role="Adm_TelefonoPersona" EntitySet="Adm_TelefonoPersona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_AltaM__casoM__1D9C270D" Association="audimedModel.Store.FK__AUD_AltaM__casoM__1D9C270D">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AltaMedica" EntitySet="AUD_AltaMedica" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_AmpCo__centr__17A35695" Association="audimedModel.Store.FK__AUD_AmpCo__centr__17A35695">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_AmpConsultaAmbulatoria" EntitySet="AUD_AmpConsultaAmbulatoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ampli__casoM__3044E72D" Association="audimedModel.Store.FK__AUD_Ampli__casoM__3044E72D">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ampli__motiv__2E5C9EBB" Association="audimedModel.Store.FK__AUD_Ampli__motiv__2E5C9EBB">
+      <End Role="AUD_MotivoEmision" EntitySet="AUD_MotivoEmision" />
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Anexo__sinie__0D65BF44" Association="audimedModel.Store.FK__AUD_Anexo__sinie__0D65BF44">
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+      <End Role="AUD_AnexoSiniestro" EntitySet="AUD_AnexoSiniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__casoM__1BB3DE9B" Association="audimedModel.Store.FK__AUD_Atenc__casoM__1BB3DE9B">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AtencionAnterior" EntitySet="AUD_AtencionAnterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__casoM__1E904B46" Association="audimedModel.Store.FK__AUD_Atenc__casoM__1E904B46">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AtencionInicial" EntitySet="AUD_AtencionInicial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__centr__3B0C8E63" Association="audimedModel.Store.FK__AUD_Atenc__centr__3B0C8E63">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_AtencionInicial" EntitySet="AUD_AtencionInicial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__centr__3C00B29C" Association="audimedModel.Store.FK__AUD_Atenc__centr__3C00B29C">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_AtencionInicial" EntitySet="AUD_AtencionInicial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__centr__64CDBE05" Association="audimedModel.Store.FK__AUD_Atenc__centr__64CDBE05">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_AtencionAnterior" EntitySet="AUD_AtencionAnterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__medio__3CF4D6D5" Association="audimedModel.Store.FK__AUD_Atenc__medio__3CF4D6D5">
+      <End Role="AUD_MedioTraslado" EntitySet="AUD_MedioTraslado" />
+      <End Role="AUD_AtencionInicial" EntitySet="AUD_AtencionInicial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__medio__3DE8FB0E" Association="audimedModel.Store.FK__AUD_Atenc__medio__3DE8FB0E">
+      <End Role="AUD_MedioEvacuacion" EntitySet="AUD_MedioEvacuacion" />
+      <End Role="AUD_AtencionInicial" EntitySet="AUD_AtencionInicial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__medio__65C1E23E" Association="audimedModel.Store.FK__AUD_Atenc__medio__65C1E23E">
+      <End Role="AUD_MedioTraslado" EntitySet="AUD_MedioTraslado" />
+      <End Role="AUD_AtencionAnterior" EntitySet="AUD_AtencionAnterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__medio__66B60677" Association="audimedModel.Store.FK__AUD_Atenc__medio__66B60677">
+      <End Role="AUD_MedioEvacuacion" EntitySet="AUD_MedioEvacuacion" />
+      <End Role="AUD_AtencionAnterior" EntitySet="AUD_AtencionAnterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Atenc__perso__63D999CC" Association="audimedModel.Store.FK__AUD_Atenc__perso__63D999CC">
+      <End Role="AUD_PersonaAutorizacionTraslado" EntitySet="AUD_PersonaAutorizacionTraslado" />
+      <End Role="AUD_AtencionAnterior" EntitySet="AUD_AtencionAnterior" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Carta__casoM__1ABFBA62" Association="audimedModel.Store.FK__AUD_Carta__casoM__1ABFBA62">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_CartaGarantia" EntitySet="AUD_CartaGarantia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Carta__centr__1AF4C48C" Association="audimedModel.Store.FK__AUD_Carta__centr__1AF4C48C">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_CartaGarantia" EntitySet="AUD_CartaGarantia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Carta__motiv__1A00A053" Association="audimedModel.Store.FK__AUD_Carta__motiv__1A00A053">
+      <End Role="AUD_MotivoEmision" EntitySet="AUD_MotivoEmision" />
+      <End Role="AUD_CartaGarantia" EntitySet="AUD_CartaGarantia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__calif__10422BEF" Association="audimedModel.Store.FK__AUD_CasoM__calif__10422BEF">
+      <End Role="AUD_CalificacionAuditoria" EntitySet="AUD_CalificacionAuditoria" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__casoM__0D30B51A" Association="audimedModel.Store.FK__AUD_CasoM__casoM__0D30B51A">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_CasoMedicoxTipoAtencion" EntitySet="AUD_CasoMedicoxTipoAtencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__casoM__19CB9629" Association="audimedModel.Store.FK__AUD_CasoM__casoM__19CB9629">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_CasoMedicoxTipoCobertura" EntitySet="AUD_CasoMedicoxTipoCobertura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__centr__11365028" Association="audimedModel.Store.FK__AUD_CasoM__centr__11365028">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__estad__122A7461" Association="audimedModel.Store.FK__AUD_CasoM__estad__122A7461">
+      <End Role="AUD_Estado" EntitySet="AUD_Estado" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__medic__1412BCD3" Association="audimedModel.Store.FK__AUD_CasoM__medic__1412BCD3">
+      <End Role="AUD_MedicoAuditor" EntitySet="AUD_MedicoAuditor" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__nombr__019F06DD" Association="audimedModel.Store.FK__AUD_CasoM__nombr__019F06DD">
+      <End Role="AUD_TipoCobertura" EntitySet="AUD_TipoCobertura" />
+      <End Role="AUD_CasoMedicoxTipoCobertura" EntitySet="AUD_CasoMedicoxTipoCobertura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__posic__15FB0545" Association="audimedModel.Store.FK__AUD_CasoM__posic__15FB0545">
+      <End Role="AUD_PosicionAccidentado" EntitySet="AUD_PosicionAccidentado" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__sinie__1506E10C" Association="audimedModel.Store.FK__AUD_CasoM__sinie__1506E10C">
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__tipoA__0E24D953" Association="audimedModel.Store.FK__AUD_CasoM__tipoA__0E24D953">
+      <End Role="AUD_TipoAtencion" EntitySet="AUD_TipoAtencion" />
+      <End Role="AUD_CasoMedicoxTipoAtencion" EntitySet="AUD_CasoMedicoxTipoAtencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CasoM__tipoA__131E989A" Association="audimedModel.Store.FK__AUD_CasoM__tipoA__131E989A">
+      <End Role="AUD_TipoAtencion" EntitySet="AUD_TipoAtencion" />
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Centr__casoM__2260DC2A" Association="audimedModel.Store.FK__AUD_Centr__casoM__2260DC2A">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_CentroMedicoxCasoMedico" EntitySet="AUD_CentroMedicoxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Centr__centr__371C01EE" Association="audimedModel.Store.FK__AUD_Centr__centr__371C01EE">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_CentroMedicoxCasoMedico" EntitySet="AUD_CentroMedicoxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Centr__medio__3533B97C" Association="audimedModel.Store.FK__AUD_Centr__medio__3533B97C">
+      <End Role="AUD_MedioTraslado" EntitySet="AUD_MedioTraslado" />
+      <End Role="AUD_CentroMedicoxCasoMedico" EntitySet="AUD_CentroMedicoxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Centr__tipoC__334B710A" Association="audimedModel.Store.FK__AUD_Centr__tipoC__334B710A">
+      <End Role="AUD_TipoCentroMedico" EntitySet="AUD_TipoCentroMedico" />
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_CIE__categor__4BE214AA" Association="audimedModel.Store.FK__AUD_CIE__categor__4BE214AA">
+      <End Role="AUD_CategoriaDiagnostico" EntitySet="AUD_CategoriaDiagnostico" />
+      <End Role="AUD_CIE" EntitySet="AUD_CIE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Conve__centr__269B8162" Association="audimedModel.Store.FK__AUD_Conve__centr__269B8162">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_ConvenioSegus" EntitySet="AUD_ConvenioSegus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Conve__exame__25A75D29" Association="audimedModel.Store.FK__AUD_Conve__exame__25A75D29">
+      <End Role="AUD_ExamenSegus" EntitySet="AUD_ExamenSegus" />
+      <End Role="AUD_ConvenioSegus" EntitySet="AUD_ConvenioSegus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Diagn__casoM__5299FF31" Association="audimedModel.Store.FK__AUD_Diagn__casoM__5299FF31">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_Diagnosticos" EntitySet="AUD_Diagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Diagn__cieId__30C40A1A" Association="audimedModel.Store.FK__AUD_Diagn__cieId__30C40A1A">
+      <End Role="AUD_CIE" EntitySet="AUD_CIE" />
+      <End Role="AUD_Diagnosticos" EntitySet="AUD_Diagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Diagn__cieId__4CD638E3" Association="audimedModel.Store.FK__AUD_Diagn__cieId__4CD638E3">
+      <End Role="AUD_CIE" EntitySet="AUD_CIE" />
+      <End Role="AUD_DiagnosticoxInvalidez" EntitySet="AUD_DiagnosticoxInvalidez" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Diagn__prior__2DE79D6F" Association="audimedModel.Store.FK__AUD_Diagn__prior__2DE79D6F">
+      <End Role="AUD_PrioridadDiagnostico" EntitySet="AUD_PrioridadDiagnostico" />
+      <End Role="AUD_Diagnosticos" EntitySet="AUD_Diagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Diagn__tipoD__2EDBC1A8" Association="audimedModel.Store.FK__AUD_Diagn__tipoD__2EDBC1A8">
+      <End Role="AUD_TipoDiagnostico" EntitySet="AUD_TipoDiagnostico" />
+      <End Role="AUD_Diagnosticos" EntitySet="AUD_Diagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Estad__casoM__55766BDC" Association="audimedModel.Store.FK__AUD_Estad__casoM__55766BDC">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_EstadoxCasoMedico" EntitySet="AUD_EstadoxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Estad__estad__548247A3" Association="audimedModel.Store.FK__AUD_Estad__estad__548247A3">
+      <End Role="AUD_Estado" EntitySet="AUD_Estado" />
+      <End Role="AUD_EstadoxCasoMedico" EntitySet="AUD_EstadoxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Exame__casoM__18D771F0" Association="audimedModel.Store.FK__AUD_Exame__casoM__18D771F0">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_ExamenxCasoMedico" EntitySet="AUD_ExamenxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Exame__exame__2A6C1246" Association="audimedModel.Store.FK__AUD_Exame__exame__2A6C1246">
+      <End Role="AUD_ExamenMinsa" EntitySet="AUD_ExamenMinsa" />
+      <End Role="AUD_ExamenxCasoMedico" EntitySet="AUD_ExamenxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Exame__exame__2B60367F" Association="audimedModel.Store.FK__AUD_Exame__exame__2B60367F">
+      <End Role="AUD_ExamenSegus" EntitySet="AUD_ExamenSegus" />
+      <End Role="AUD_ExamenxCasoMedico" EntitySet="AUD_ExamenxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Exame__tarif__278FA59B" Association="audimedModel.Store.FK__AUD_Exame__tarif__278FA59B">
+      <End Role="AUD_TarifarioSegus" EntitySet="AUD_TarifarioSegus" />
+      <End Role="AUD_ExamenSegus" EntitySet="AUD_ExamenSegus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Exame__tarif__3FB147EF" Association="audimedModel.Store.FK__AUD_Exame__tarif__3FB147EF">
+      <End Role="AUD_TarifarioMinsa" EntitySet="AUD_TarifarioMinsa" />
+      <End Role="AUD_ExamenMinsa" EntitySet="AUD_ExamenMinsa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ficha__casoM__566A9015" Association="audimedModel.Store.FK__AUD_Ficha__casoM__566A9015">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_FichaCartasReservas" EntitySet="AUD_FichaCartasReservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ficha__casoM__575EB44E" Association="audimedModel.Store.FK__AUD_Ficha__casoM__575EB44E">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_FichaExamenesDiagnosticos" EntitySet="AUD_FichaExamenesDiagnosticos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ficha__casoM__5852D887" Association="audimedModel.Store.FK__AUD_Ficha__casoM__5852D887">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_FichaObservacion" EntitySet="AUD_FichaObservacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Ficha__tipoA__4A4ED1F3" Association="audimedModel.Store.FK__AUD_Ficha__tipoA__4A4ED1F3">
+      <End Role="AUD_TipoAlertaCasoMedico" EntitySet="AUD_TipoAlertaCasoMedico" />
+      <End Role="AUD_FichaObservacion" EntitySet="AUD_FichaObservacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Inval__casoM__02B326A7" Association="audimedModel.Store.FK__AUD_Inval__casoM__02B326A7">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_InvalidezxCasoMedico" EntitySet="AUD_InvalidezxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Inval__inval__01BF026E" Association="audimedModel.Store.FK__AUD_Inval__inval__01BF026E">
+      <End Role="AUD_Invalidez" EntitySet="AUD_Invalidez" />
+      <End Role="AUD_InvalidezxCasoMedico" EntitySet="AUD_InvalidezxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Inval__tipoI__7FD6B9FC" Association="audimedModel.Store.FK__AUD_Inval__tipoI__7FD6B9FC">
+      <End Role="AUD_TipoInvalidez" EntitySet="AUD_TipoInvalidez" />
+      <End Role="AUD_Invalidez" EntitySet="AUD_Invalidez" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Inval__tipoR__4CE125DB" Association="audimedModel.Store.FK__AUD_Inval__tipoR__4CE125DB">
+      <End Role="AUD_TipoReservaxCasoMedico" EntitySet="AUD_TipoReservaxCasoMedico" />
+      <End Role="AUD_InvalidezxCasoMedico" EntitySet="AUD_InvalidezxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Lesio__casoM__5946FCC0" Association="audimedModel.Store.FK__AUD_Lesio__casoM__5946FCC0">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_Lesionado" EntitySet="AUD_Lesionado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Lesio__estad__31832429" Association="audimedModel.Store.FK__AUD_Lesio__estad__31832429">
+      <End Role="AUD_EstadoLesionado" EntitySet="AUD_EstadoLesionado" />
+      <End Role="AUD_Lesionado" EntitySet="AUD_Lesionado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Lesio__tipoE__32774862" Association="audimedModel.Store.FK__AUD_Lesio__tipoE__32774862">
+      <End Role="AUD_TipoEdad" EntitySet="AUD_TipoEdad" />
+      <End Role="AUD_Lesionado" EntitySet="AUD_Lesionado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Medic__casoM__6ADB9D16" Association="audimedModel.Store.FK__AUD_Medic__casoM__6ADB9D16">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_MedicoAuditorxCasoMedico" EntitySet="AUD_MedicoAuditorxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Medic__centr__6CC3E588" Association="audimedModel.Store.FK__AUD_Medic__centr__6CC3E588">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_MedicoAuditorxCasoMedico" EntitySet="AUD_MedicoAuditorxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Medic__medic__69E778DD" Association="audimedModel.Store.FK__AUD_Medic__medic__69E778DD">
+      <End Role="AUD_MedicoAuditor" EntitySet="AUD_MedicoAuditor" />
+      <End Role="AUD_MedicoAuditorxCasoMedico" EntitySet="AUD_MedicoAuditorxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Medic__sinie__6BCFC14F" Association="audimedModel.Store.FK__AUD_Medic__sinie__6BCFC14F">
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+      <End Role="AUD_MedicoAuditorxCasoMedico" EntitySet="AUD_MedicoAuditorxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Model__clase__02E830D1" Association="audimedModel.Store.FK__AUD_Model__clase__02E830D1">
+      <End Role="AUD_Clase_Vehiculo" EntitySet="AUD_Clase_Vehiculo" />
+      <End Role="AUD_Modelo_Vehiculo" EntitySet="AUD_Modelo_Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Model__marca__03DC550A" Association="audimedModel.Store.FK__AUD_Model__marca__03DC550A">
+      <End Role="AUD_Marca_Vehiculo" EntitySet="AUD_Marca_Vehiculo" />
+      <End Role="AUD_Modelo_Vehiculo" EntitySet="AUD_Modelo_Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Monto__nombr__50DBD3F1" Association="audimedModel.Store.FK__AUD_Monto__nombr__50DBD3F1">
+      <End Role="AUD_TipoCobertura" EntitySet="AUD_TipoCobertura" />
+      <End Role="AUD_MontoCobertura" EntitySet="AUD_MontoCobertura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Motiv__TipoM__1CDD0CFE" Association="audimedModel.Store.FK__AUD_Motiv__TipoM__1CDD0CFE">
+      <End Role="AUD_TipoMotivo" EntitySet="AUD_TipoMotivo" />
+      <End Role="AUD_MotivoEmision" EntitySet="AUD_MotivoEmision" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__clien__0A895299" Association="audimedModel.Store.FK__AUD_Sinie__clien__0A895299">
+      <End Role="AUD_Cliente" EntitySet="AUD_Cliente" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__estad__05C49D7C" Association="audimedModel.Store.FK__AUD_Sinie__estad__05C49D7C">
+      <End Role="AUD_EstadoProcuraduria" EntitySet="AUD_EstadoProcuraduria" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__motiv__08A10A27" Association="audimedModel.Store.FK__AUD_Sinie__motiv__08A10A27">
+      <End Role="AUD_MotivoRegistro" EntitySet="AUD_MotivoRegistro" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__tipoC__07ACE5EE" Association="audimedModel.Store.FK__AUD_Sinie__tipoC__07ACE5EE">
+      <End Role="AUD_TipoComunicacion" EntitySet="AUD_TipoComunicacion" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__tipoP__09952E60" Association="audimedModel.Store.FK__AUD_Sinie__tipoP__09952E60">
+      <End Role="AUD_TipoPoliza" EntitySet="AUD_TipoPoliza" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Sinie__tipoS__06B8C1B5" Association="audimedModel.Store.FK__AUD_Sinie__tipoS__06B8C1B5">
+      <End Role="AUD_TipoSiniestro" EntitySet="AUD_TipoSiniestro" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Tarif__prede__2C545AB8" Association="audimedModel.Store.FK__AUD_Tarif__prede__2C545AB8">
+      <End Role="AUD_TarifarioSegus" EntitySet="AUD_TarifarioSegus" />
+      <End Role="AUD_TarifarioSegus1" EntitySet="AUD_TarifarioSegus" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Tarif__prede__5788D180" Association="audimedModel.Store.FK__AUD_Tarif__prede__5788D180">
+      <End Role="AUD_TarifarioMinsa" EntitySet="AUD_TarifarioMinsa" />
+      <End Role="AUD_TarifarioMinsa1" EntitySet="AUD_TarifarioMinsa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_TipoA__casoM__16EF297E" Association="audimedModel.Store.FK__AUD_TipoA__casoM__16EF297E">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_TipoAlertaxCasoMedico" EntitySet="AUD_TipoAlertaxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_TipoA__tipoA__5A502F92" Association="audimedModel.Store.FK__AUD_TipoA__tipoA__5A502F92">
+      <End Role="AUD_TipoAlertaCasoMedico" EntitySet="AUD_TipoAlertaCasoMedico" />
+      <End Role="AUD_TipoAlertaxCasoMedico" EntitySet="AUD_TipoAlertaxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AUD_Visit__centr__675524F5" Association="audimedModel.Store.FK__AUD_Visit__centr__675524F5">
+      <End Role="AUD_CentroMedico" EntitySet="AUD_CentroMedico" />
+      <End Role="AUD_VisitaMedica" EntitySet="AUD_VisitaMedica" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_Acces__usuar__03FC509B" Association="audimedModel.Store.FK__Sys_Acces__usuar__03FC509B">
+      <End Role="Sys_Usuario" EntitySet="Sys_Usuario" />
+      <End Role="Sys_AccesoUsuario" EntitySet="Sys_AccesoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_Acceso__Funcionalidad" Association="audimedModel.Store.FK__Sys_Acceso__Funcionalidad">
+      <End Role="Sys_Funcionalidad" EntitySet="Sys_Funcionalidad" />
+      <End Role="Sys_Acceso" EntitySet="Sys_Acceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_AccesoUsuari__Funcionalidad" Association="audimedModel.Store.FK__Sys_AccesoUsuari__Funcionalidad">
+      <End Role="Sys_Funcionalidad" EntitySet="Sys_Funcionalidad" />
+      <End Role="Sys_AccesoUsuario" EntitySet="Sys_AccesoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_Funci__appId__3B75D760" Association="audimedModel.Store.FK__Sys_Funci__appId__3B75D760">
+      <End Role="Sys_App" EntitySet="Sys_App" />
+      <End Role="Sys_Funcionalidad" EntitySet="Sys_Funcionalidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_RolUs__usuar__07CCE17F" Association="audimedModel.Store.FK__Sys_RolUs__usuar__07CCE17F">
+      <End Role="Sys_Usuario" EntitySet="Sys_Usuario" />
+      <End Role="Sys_RolUsuario" EntitySet="Sys_RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sys_Usuar__ciaId__1368B15D" Association="audimedModel.Store.FK__Sys_Usuar__ciaId__1368B15D">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Sys_Usuario" EntitySet="Sys_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Adm_Inspector_Adm_Persona" Association="audimedModel.Store.FK_Adm_Inspector_Adm_Persona">
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+      <End Role="Adm_Inspector" EntitySet="Adm_Inspector" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Adm_Persona_Sys_Usuario" Association="audimedModel.Store.FK_Adm_Persona_Sys_Usuario">
+      <End Role="Sys_Usuario" EntitySet="Sys_Usuario" />
+      <End Role="Adm_Persona" EntitySet="Adm_Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpConsultaAmbulatoria_AUD_AmpliatorioMedico" Association="audimedModel.Store.FK_AUD_AmpConsultaAmbulatoria_AUD_AmpliatorioMedico">
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+      <End Role="AUD_AmpConsultaAmbulatoria" EntitySet="AUD_AmpConsultaAmbulatoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpConsultaAmbulatoria_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_AmpConsultaAmbulatoria_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AmpConsultaAmbulatoria" EntitySet="AUD_AmpConsultaAmbulatoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpMateriaOsteosintesis_AUD_AmpliatorioMedico" Association="audimedModel.Store.FK_AUD_AmpMateriaOsteosintesis_AUD_AmpliatorioMedico">
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+      <End Role="AUD_AmpMateriaOsteosintesis" EntitySet="AUD_AmpMateriaOsteosintesis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpMateriaOsteosintesis_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_AmpMateriaOsteosintesis_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AmpMateriaOsteosintesis" EntitySet="AUD_AmpMateriaOsteosintesis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpPermanenciaHospitalaria_AUD_AmpliatorioMedico" Association="audimedModel.Store.FK_AUD_AmpPermanenciaHospitalaria_AUD_AmpliatorioMedico">
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+      <End Role="AUD_AmpPermanenciaHospitalaria" EntitySet="AUD_AmpPermanenciaHospitalaria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_AmpPermanenciaHospitalaria_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_AmpPermanenciaHospitalaria_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_AmpPermanenciaHospitalaria" EntitySet="AUD_AmpPermanenciaHospitalaria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_DiagnosticoxInvalidez_AUD_InvalidezxCasoMedico" Association="audimedModel.Store.FK_AUD_DiagnosticoxInvalidez_AUD_InvalidezxCasoMedico">
+      <End Role="AUD_InvalidezxCasoMedico" EntitySet="AUD_InvalidezxCasoMedico" />
+      <End Role="AUD_DiagnosticoxInvalidez" EntitySet="AUD_DiagnosticoxInvalidez" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_DocumentoxInvalidez_AUD_InvalidezxCasoMedico" Association="audimedModel.Store.FK_AUD_DocumentoxInvalidez_AUD_InvalidezxCasoMedico">
+      <End Role="AUD_InvalidezxCasoMedico" EntitySet="AUD_InvalidezxCasoMedico" />
+      <End Role="AUD_DocumentoxInvalidez" EntitySet="AUD_DocumentoxInvalidez" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_Siniestro_AUD_Modelo_Vehiculo" Association="audimedModel.Store.FK_AUD_Siniestro_AUD_Modelo_Vehiculo">
+      <End Role="AUD_Modelo_Vehiculo" EntitySet="AUD_Modelo_Vehiculo" />
+      <End Role="AUD_Siniestro" EntitySet="AUD_Siniestro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_Terapias_AUD_AmpliatorioMedico" Association="audimedModel.Store.FK_AUD_Terapias_AUD_AmpliatorioMedico">
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+      <End Role="AUD_Terapias" EntitySet="AUD_Terapias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_Terapias_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_Terapias_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_Terapias" EntitySet="AUD_Terapias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_TipoReservaxCasoMedico_AUD_AmpliatorioMedico" Association="audimedModel.Store.FK_AUD_TipoReservaxCasoMedico_AUD_AmpliatorioMedico">
+      <End Role="AUD_AmpliatorioMedico" EntitySet="AUD_AmpliatorioMedico" />
+      <End Role="AUD_TipoReservaxCasoMedico" EntitySet="AUD_TipoReservaxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_TipoReservaxCasoMedico_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_TipoReservaxCasoMedico_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_TipoReservaxCasoMedico" EntitySet="AUD_TipoReservaxCasoMedico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUD_VisitaMedica_AUD_CasoMedico" Association="audimedModel.Store.FK_AUD_VisitaMedica_AUD_CasoMedico">
+      <End Role="AUD_CasoMedico" EntitySet="AUD_CasoMedico" />
+      <End Role="AUD_VisitaMedica" EntitySet="AUD_VisitaMedica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Acceso_Sys_Rol" Association="audimedModel.Store.FK_Sys_Acceso_Sys_Rol">
+      <End Role="Sys_Rol" EntitySet="Sys_Rol" />
+      <End Role="Sys_Acceso" EntitySet="Sys_Acceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_Rol_Sys_App" Association="audimedModel.Store.FK_Sys_Rol_Sys_App">
+      <End Role="Sys_App" EntitySet="Sys_App" />
+      <End Role="Sys_Rol" EntitySet="Sys_Rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sys_RolUsuario_Sys_RolUsuario" Association="audimedModel.Store.FK_Sys_RolUsuario_Sys_RolUsuario">
+      <End Role="Sys_Rol" EntitySet="Sys_Rol" />
+      <End Role="Sys_RolUsuario" EntitySet="Sys_RolUsuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Adm_AnhoVehiculo">
+    <Key>
+      <PropertyRef Name="marcaVehiculoId" />
+      <PropertyRef Name="modeloVehiculoId" />
+      <PropertyRef Name="anhoVehiculoId" />
+      <PropertyRef Name="claseVehiculoId" />
+    </Key>
+    <Property Name="marcaVehiculoId" Type="int" Nullable="false" />
+    <Property Name="modeloVehiculoId" Type="int" Nullable="false" />
+    <Property Name="anhoVehiculoId" Type="datetime" Nullable="false" />
+    <Property Name="claseVehiculoId" Type="int" Nullable="false" />
+    <Property Name="valorComercial" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="monedaId" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Asegurado">
+    <Key>
+      <PropertyRef Name="aseguradoId" />
+    </Key>
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="aseguradoId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Aseguradora">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adm_Beneficiario">
+    <Key>
+      <PropertyRef Name="beneficiarioId" />
+    </Key>
+    <Property Name="beneficiarioId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Broker">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adm_ClaseVehiculo">
+    <Key>
+      <PropertyRef Name="claseVehiculoId" />
+    </Key>
+    <Property Name="claseVehiculoId" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="claseVehiculo" Type="varchar" MaxLength="250" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Adm_Cliente">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="serverid" Type="varchar" MaxLength="100" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Direccion">
+    <Key>
+      <PropertyRef Name="personaId" />
+      <PropertyRef Name="direccionId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="direccionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="direccion" Type="varchar" MaxLength="250" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="referencia" Type="varchar" MaxLength="1000" />
+    <Property Name="descripcion" Type="varchar" MaxLength="250" />
+    <Property Name="tdireccionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="ubigeoId" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="Adm_DocId">
+    <Key>
+      <PropertyRef Name="personaId" />
+      <PropertyRef Name="tdocidId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="docid" Type="varchar" MaxLength="100" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="tdocidId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Empleado">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="cargoId" Type="numeric" Precision="5" />
+  </EntityType>
+  <EntityType Name="Adm_EstadoCivil">
+    <Key>
+      <PropertyRef Name="estadoCivilId" />
+    </Key>
+    <Property Name="estadoCivilId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estadoCivil" Type="varchar" MaxLength="50" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Inspector">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Adm_MarcaVehiculo">
+    <Key>
+      <PropertyRef Name="marcaVehiculoId" />
+    </Key>
+    <Property Name="marcaVehiculoId" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="marcaVehiculo" Type="varchar" MaxLength="250" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Adm_ModeloVehiculo">
+    <Key>
+      <PropertyRef Name="modeloVehiculoId" />
+      <PropertyRef Name="marcaVehiculoId" />
+      <PropertyRef Name="claseVehiculoId" />
+    </Key>
+    <Property Name="modeloVehiculoId" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="marcaVehiculoId" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="claseVehiculoId" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="modeloVehiculo" Type="varchar" MaxLength="250" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Adm_Moneda">
+    <Key>
+      <PropertyRef Name="monedaId" />
+    </Key>
+    <Property Name="monedaId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="moneda" Type="varchar" MaxLength="100" />
+    <Property Name="simbolo" Type="varchar" MaxLength="5" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Persona">
+    <Key>
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="personaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="contactodeId" Type="int" />
+    <Property Name="persona" Type="varchar" MaxLength="1000" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="nombre1" Type="varchar" MaxLength="250" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="nombre2" Type="varchar" MaxLength="250" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="apellido1" Type="varchar" MaxLength="250" />
+    <Property Name="apellido2" Type="varchar" MaxLength="250" />
+    <Property Name="codigo" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="250" />
+    <Property Name="sexo" Type="varchar" MaxLength="1" />
+    <Property Name="estadoCivilId" Type="varchar" MaxLength="30" />
+    <Property Name="fnacimiento" Type="datetime" />
+    <Property Name="conyuge" Type="varchar" MaxLength="1000" />
+    <Property Name="usuarioId" Type="int" />
+    <Property Name="email2" Type="varchar" MaxLength="250" />
+    <Property Name="vip" Type="bit" />
+    <Property Name="personaJuridica" Type="bit" />
+    <Property Name="menorEdad" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'audimed.dbo.Adm_PunraPrimra' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Adm_PunraPrimra">
+    <Key>
+      <PropertyRef Name="primeraLetra" />
+      <PropertyRef Name="claseVehiculoId" />
+    </Key>
+    <Property Name="primeraLetra" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="claseVehiculoId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'audimed.dbo.Adm_PunraSegunda' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Adm_PunraSegunda">
+    <Key>
+      <PropertyRef Name="segundaLetra" />
+      <PropertyRef Name="ubigeoId" />
+    </Key>
+    <Property Name="segundaLetra" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ubigeoId" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TCambio">
+    <Key>
+      <PropertyRef Name="monedaId" />
+      <PropertyRef Name="fecha" />
+    </Key>
+    <Property Name="monedaId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="tCambio" Type="numeric" Precision="6" Scale="4" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TComunicacion">
+    <Key>
+      <PropertyRef Name="tcomunicacionId" />
+    </Key>
+    <Property Name="tcomunicacionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="tcomunicacion" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TDireccion">
+    <Key>
+      <PropertyRef Name="tdireccionId" />
+    </Key>
+    <Property Name="tdireccionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="tdireccion" Type="varchar" MaxLength="100" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TDocId">
+    <Key>
+      <PropertyRef Name="tdocidId" />
+    </Key>
+    <Property Name="tdocidId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="tdocid" Type="varchar" MaxLength="100" />
+    <Property Name="regularExpression" Type="varchar" MaxLength="250" />
+    <Property Name="nroCaracteres" Type="int" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TelefonoPersona">
+    <Key>
+      <PropertyRef Name="telefonoId" />
+      <PropertyRef Name="personaId" />
+    </Key>
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="telefonoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="ttelefonoId" Type="varchar" MaxLength="30" />
+    <Property Name="personaId" Type="int" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TPersona">
+    <Key>
+      <PropertyRef Name="tpersonaId" />
+    </Key>
+    <Property Name="tpersonaId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="tpersona" Type="varchar" MaxLength="100" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_TTelefono">
+    <Key>
+      <PropertyRef Name="ttelefonoId" />
+    </Key>
+    <Property Name="ttelefonoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="ttelefono" Type="varchar" MaxLength="100" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Adm_Ubigeo">
+    <Key>
+      <PropertyRef Name="ubigeoId" />
+    </Key>
+    <Property Name="ubigeoId" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="ubigeo" Type="varchar" MaxLength="100" />
+    <Property Name="departamento" Type="varchar" MaxLength="100" />
+    <Property Name="provincia" Type="varchar" MaxLength="100" />
+    <Property Name="distrito" Type="varchar" MaxLength="100" />
+    <Property Name="coddep" Type="varchar" MaxLength="3" />
+    <Property Name="codpro" Type="varchar" MaxLength="3" />
+    <Property Name="coddis" Type="varchar" MaxLength="3" />
+    <Property Name="depprodis" Type="varchar" MaxLength="306" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_AltaMedica">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="tipoAltaMedica" Type="char" MaxLength="1" />
+    <Property Name="fechaAlta" Type="datetime" />
+    <Property Name="numDiasHospital" Type="int" />
+    <Property Name="fechaProbableAlta" Type="datetime" />
+    <Property Name="medicoTratante" Type="varchar" MaxLength="30" />
+    <Property Name="numCMP" Type="varchar" MaxLength="20" />
+    <Property Name="proximaCita" Type="datetime" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="comentario" Type="text" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="fechaSegundaVisita" Type="datetime" />
+    <Property Name="fechaTerceraVisita" Type="datetime" />
+    <Property Name="medicoTratanteDefinitivo" Type="varchar" MaxLength="30" />
+    <Property Name="numCMPDefinitivo" Type="varchar" MaxLength="20" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_AmpConsultaAmbulatoria">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ampliatorioId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="lugarAtencion" Type="varchar" MaxLength="100" />
+    <Property Name="centroMedicoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="comentarioConsulta" Type="text" />
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AUD_AmpliatorioMedico">
+    <Key>
+      <PropertyRef Name="ampliatorioId" />
+    </Key>
+    <Property Name="ampliatorioId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="comentarioControlAuditoria" Type="text" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="link" Type="varchar" MaxLength="100" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="detalleAmpliatorio" Type="text" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="cartaGarantiaId" Type="numeric" Precision="5" />
+    <Property Name="otroMotivoAmpliatorio" Type="varchar" MaxLength="100" />
+    <Property Name="motivoEmisionId" Type="varchar" MaxLength="30" />
+    <Property Name="pendienteCartaGarantia" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_AmpMateriaOsteosintesis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ampliatorioId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="detalleAmpliatorio" Type="text" />
+    <Property Name="proveedor" Type="varchar" MaxLength="100" />
+    <Property Name="cantidad" Type="int" />
+    <Property Name="material" Type="varchar" MaxLength="100" />
+    <Property Name="precioUnitario" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="precioTotal" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="cartaGarantiaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AUD_AmpPermanenciaHospitalaria">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ampliatorioId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="nroDiasAdicionales" Type="int" />
+    <Property Name="fechaProbableAlta" Type="datetime" />
+    <Property Name="altaMedicaDefinitiva" Type="varchar" MaxLength="1" />
+    <Property Name="fechaAltaDefinitiva" Type="datetime" />
+    <Property Name="fechaProximaVisita" Type="datetime" />
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AUD_AnexoSiniestro">
+    <Key>
+      <PropertyRef Name="anexoId" />
+    </Key>
+    <Property Name="anexoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="anexo" Type="image" />
+    <Property Name="nombreArchivo" Type="varchar" MaxLength="100" />
+    <Property Name="tipoArchivo" Type="varchar" MaxLength="6" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="siniestroId" Type="numeric" Nullable="false" Precision="5" />
+  </EntityType>
+  <EntityType Name="AUD_AtencionAnterior">
+    <Key>
+      <PropertyRef Name="fichaAtencionAnteriorId" />
+    </Key>
+    <Property Name="fichaAtencionAnteriorId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="centroMedicoId" Type="numeric" Precision="5" />
+    <Property Name="fechaIngresoLesionado" Type="datetime" />
+    <Property Name="nombreProveedorTraslado" Type="varchar" MaxLength="100" />
+    <Property Name="nombreCentroMedico" Type="varchar" MaxLength="250" />
+    <Property Name="medioEvacuacionId" Type="varchar" MaxLength="100" />
+    <Property Name="provedorTrasladoId" Type="numeric" Precision="5" />
+    <Property Name="nombreResponsableTraslado" Type="varchar" MaxLength="30" />
+    <Property Name="estadoCentroMedico" Type="varchar" MaxLength="1" />
+    <Property Name="medioTrasladoId" Type="varchar" MaxLength="30" />
+    <Property Name="personaAutorizoTrasladoId" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="AUD_AtencionInicial">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaIngreso" Type="datetime" />
+    <Property Name="nombreEmergencista" Type="varchar" MaxLength="100" />
+    <Property Name="numeroCMP" Type="varchar" MaxLength="20" />
+    <Property Name="motivoTraslado" Type="text" />
+    <Property Name="nombreProveedorTraslado" Type="varchar" MaxLength="100" />
+    <Property Name="medioEvacuacionId" Type="varchar" MaxLength="100" />
+    <Property Name="centroMedicoInicioId" Type="numeric" Precision="5" />
+    <Property Name="centroMedicoTrasladarId" Type="numeric" Precision="5" />
+    <Property Name="proveedorTraslado" Type="numeric" Precision="5" />
+    <Property Name="comentario" Type="text" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="medioTrasladoId" Type="varchar" MaxLength="30" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_CalificacionAuditoria">
+    <Key>
+      <PropertyRef Name="calificacionAuditoriaId" />
+    </Key>
+    <Property Name="calificacionAuditoriaId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_CartaGarantia">
+    <Key>
+      <PropertyRef Name="cartaGarantiaId" />
+    </Key>
+    <Property Name="cartaGarantiaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="fechaEmision" Type="datetime" />
+    <Property Name="monto" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="etapaRegistro" Type="varchar" MaxLength="1" />
+    <Property Name="entregadoA" Type="varchar" MaxLength="30" />
+    <Property Name="nroCartaReferencia" Type="varchar" MaxLength="30" />
+    <Property Name="nroCartaGarantia" Type="varchar" MaxLength="30" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="centroMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="estadoCarta" Type="varchar" MaxLength="1" />
+    <Property Name="motivoEmisionId" Type="varchar" MaxLength="30" />
+    <Property Name="montoPorFacturar" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="nroPresupuesto" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="AUD_CasoMedico">
+    <Key>
+      <PropertyRef Name="casoMedicoId" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="nroCasoMedico" Type="varchar" MaxLength="30" />
+    <Property Name="posicionAccidentadoId" Type="varchar" MaxLength="30" />
+    <Property Name="totalMontoCartasGarantia" Type="int" />
+    <Property Name="montoTotalFacturado" Type="int" />
+    <Property Name="montoTotalReembolso" Type="int" />
+    <Property Name="costoSiniestro" Type="int" />
+    <Property Name="saldoCobertura" Type="int" />
+    <Property Name="totalDiasIncapacidad" Type="int" />
+    <Property Name="totalPorcentajeIncapacidad" Type="int" />
+    <Property Name="siniestroId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="medicoAuditorId" Type="int" />
+    <Property Name="fechaRegistroCaso" Type="datetime" />
+    <Property Name="nroPolizaAuditada" Type="varchar" MaxLength="100" />
+    <Property Name="inicioVigenciaPoliza" Type="datetime" />
+    <Property Name="finVigenciaPoliza" Type="datetime" />
+    <Property Name="centroMedicoId" Type="numeric" Precision="5" />
+    <Property Name="maxDiasIncapacidad" Type="int" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="flagValidacionCentroMedico" Type="varchar" MaxLength="1" />
+    <Property Name="tipoAtencionId" Type="varchar" MaxLength="30" />
+    <Property Name="estadoCasoId" Type="varchar" MaxLength="20" />
+    <Property Name="calificacionAuditoriaId" Type="varchar" MaxLength="100" />
+    <Property Name="valorUIT" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="periodoLaborable" Type="int" />
+    <Property Name="sueldoMinimoVital" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="renumeracionDiaria" Type="numeric" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="AUD_CasoMedicoxTipoAtencion">
+    <Key>
+      <PropertyRef Name="tipoAtencionCasoId" />
+    </Key>
+    <Property Name="tipoAtencionCasoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="tipoAtencionId" Type="varchar" MaxLength="30" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupadate" Type="varchar" MaxLength="20" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="etapaRegistro" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_CasoMedicoxTipoCobertura">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="montoMaximoCobertura" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="nombreCobertura" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="numeroUIT" Type="int" />
+    <Property Name="valorUIT" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="etapaRegistro" Type="varchar" MaxLength="1" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_CategoriaDiagnostico">
+    <Key>
+      <PropertyRef Name="categoriaDiagnosticoId" />
+    </Key>
+    <Property Name="categoriaDiagnosticoId" Type="numeric" Nullable="false" Precision="2" StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCategoria" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="AUD_CentroMedico">
+    <Key>
+      <PropertyRef Name="centroMedicoId" />
+    </Key>
+    <Property Name="centroMedicoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="razonSocial" Type="varchar" MaxLength="250" />
+    <Property Name="nombreComercial" Type="varchar" MaxLength="250" />
+    <Property Name="ruc" Type="varchar" MaxLength="20" />
+    <Property Name="correoElectronico" Type="varchar" MaxLength="100" />
+    <Property Name="direccion" Type="varchar" MaxLength="250" />
+    <Property Name="tipoCentroMedicoId" Type="int" />
+    <Property Name="ubigeoId" Type="varchar" MaxLength="6" />
+    <Property Name="factorConvenioSegus" Type="numeric" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="AUD_CentroMedicoxCasoMedico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="centroMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="nombreEmergencista" Type="varchar" MaxLength="100" />
+    <Property Name="ucrea" Type="varchar" MaxLength="250" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="motivoTraslado" Type="varchar" MaxLength="100" />
+    <Property Name="cmpEmergencista" Type="varchar" MaxLength="20" />
+    <Property Name="fechaIngreso" Type="datetime" />
+    <Property Name="estadoCambioCentroMedico" Type="varchar" MaxLength="1" />
+    <Property Name="nombreProveedorTraslado" Type="varchar" MaxLength="100" />
+    <Property Name="medioTrasladoId" Type="varchar" MaxLength="30" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_CIE">
+    <Key>
+      <PropertyRef Name="cieId" />
+    </Key>
+    <Property Name="cieId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="codigoDiagnostico" Type="varchar" MaxLength="100" />
+    <Property Name="diagnostico" Type="varchar" MaxLength="250" />
+    <Property Name="categoriaDiagnosticoId" Type="numeric" Nullable="false" Precision="2" />
+  </EntityType>
+  <EntityType Name="AUD_Clase_Vehiculo">
+    <Key>
+      <PropertyRef Name="claseVehiculoId" />
+    </Key>
+    <Property Name="claseVehiculoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="claseVehiculo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_Cliente">
+    <Key>
+      <PropertyRef Name="clienteId" />
+    </Key>
+    <Property Name="clienteId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCliente" Type="varchar" MaxLength="20" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_ConvenioSegus">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="centroMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="examenSegusId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="precioExamen" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_Diagnosticos">
+    <Key>
+      <PropertyRef Name="diagnosticoId" />
+    </Key>
+    <Property Name="diagnosticoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="cieId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="tipoDiagnosticoId" Type="varchar" MaxLength="30" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+    <Property Name="prioridadDiagnosticoId" Type="varchar" MaxLength="30" />
+    <Property Name="codigoDiagnostico" Type="varchar" MaxLength="100" />
+    <Property Name="nombreDiagnostico" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="AUD_DiagnosticoxInvalidez">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="cieId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="invalidezCasoId" Type="int" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_DocumentoxInvalidez">
+    <Key>
+      <PropertyRef Name="docInvalidezId" />
+    </Key>
+    <Property Name="docInvalidezId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="documento" Type="image" />
+    <Property Name="nombreArchivo" Type="varchar" MaxLength="100" />
+    <Property Name="tipoArchivo" Type="varchar" MaxLength="6" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="invelidezCasoId" Type="int" />
+  </EntityType>
+  <EntityType Name="AUD_Estado">
+    <Key>
+      <PropertyRef Name="estadoCasoId" />
+    </Key>
+    <Property Name="estadoCasoId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="orden" Type="int" />
+  </EntityType>
+  <EntityType Name="AUD_EstadoLesionado">
+    <Key>
+      <PropertyRef Name="estadoLesionadoId" />
+    </Key>
+    <Property Name="estadoLesionadoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_EstadoProcuraduria">
+    <Key>
+      <PropertyRef Name="estadoProcuraduriaId" />
+    </Key>
+    <Property Name="estadoProcuraduriaId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_EstadoxCasoMedico">
+    <Key>
+      <PropertyRef Name="estadoCasoMedicoId" />
+    </Key>
+    <Property Name="estadoCasoMedicoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="estadoCasoId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="comentarioCambioEstado" Type="text" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_ExamenMinsa">
+    <Key>
+      <PropertyRef Name="examenMinsaId" />
+    </Key>
+    <Property Name="examenMinsaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="precioExamen" Type="int" />
+    <Property Name="tarifarioMinsaId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="nombreExamenMinsa" Type="varchar" MaxLength="1000" />
+    <Property Name="codigoExamenMinsa" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_ExamenSegus">
+    <Key>
+      <PropertyRef Name="examenSegusId" />
+    </Key>
+    <Property Name="examenSegusId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="tarifarioSEGUSid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="nombreExamenSegus" Type="varchar" MaxLength="1000" />
+    <Property Name="valorExamen" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_ExamenxCasoMedico">
+    <Key>
+      <PropertyRef Name="examenCasoMedicoId" />
+    </Key>
+    <Property Name="examenCasoMedicoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="examenSegusId" Type="varchar" MaxLength="20" />
+    <Property Name="examenMinsaId" Type="numeric" Precision="5" />
+    <Property Name="cantidadExamenes" Type="int" />
+    <Property Name="precioExamen" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="fechaExamen" Type="datetime" />
+    <Property Name="fechaExamenProgramado" Type="datetime" />
+    <Property Name="estadoExamen" Type="varchar" MaxLength="1" />
+    <Property Name="resultadoExamen" Type="varchar" MaxLength="1000" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+    <Property Name="flagObservado" Type="varchar" MaxLength="1" />
+    <Property Name="nombreExamenMedico" Type="varchar" MaxLength="1000" />
+    <Property Name="codigoExamen" Type="varchar" MaxLength="20" />
+    <Property Name="categoriaExamen" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="AUD_FichaCartasReservas">
+    <Key>
+      <PropertyRef Name="fichaReservaId" />
+    </Key>
+    <Property Name="emisionCartaGarantia" Type="varchar" MaxLength="1" />
+    <Property Name="comentario" Type="text" />
+    <Property Name="reservaGastosMedicos" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="reservaGastosMuerte" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="reservaGastosSepelio" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="reservaGastosInvalidez" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="reservaGastosIncapacidad" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="diasIncapacidad" Type="int" />
+    <Property Name="porcentajeInvalidez" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="comentarioNoEmisionCG" Type="text" />
+    <Property Name="fichaReservaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_FichaExamenesDiagnosticos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="tratamientosRealizados" Type="text" />
+    <Property Name="comentarios" Type="text" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_FichaObservacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="observacionGeneral" Type="text" />
+    <Property Name="flagAlerta" Type="varchar" MaxLength="1" />
+    <Property Name="comentarioAlerta" Type="text" />
+    <Property Name="comentarioRespuestaAlerta" Type="text" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="tipoAlertaCasoMedicoId" Type="varchar" MaxLength="30" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_Invalidez">
+    <Key>
+      <PropertyRef Name="invalidezId" />
+    </Key>
+    <Property Name="invalidezId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="invalidez" Type="varchar" MaxLength="1000" />
+    <Property Name="porcentajePrincipal" Type="int" />
+    <Property Name="porcentajeSecundario" Type="int" />
+    <Property Name="tipoInvalidez" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_InvalidezxCasoMedico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="invalidezId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="causaInvalidez" Type="text" />
+    <Property Name="medicoTratante" Type="varchar" MaxLength="100" />
+    <Property Name="CMP" Type="char" MaxLength="18" />
+    <Property Name="nombreMedicoAuditor" Type="varchar" MaxLength="100" />
+    <Property Name="opinionMedicoAuditor" Type="text" />
+    <Property Name="porcentajeInvalidez" Type="int" />
+    <Property Name="nombreMedicoAuditorInterno" Type="varchar" MaxLength="100" />
+    <Property Name="condicion" Type="varchar" MaxLength="1" />
+    <Property Name="opinionMedicoAuditorInterno" Type="text" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="tipoReservaCasoId" Type="numeric" Precision="5" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_Lesionado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="nombreLesionado" Type="varchar" MaxLength="20" />
+    <Property Name="sexo" Type="varchar" MaxLength="20" />
+    <Property Name="direccion" Type="varchar" MaxLength="100" />
+    <Property Name="edad" Type="int" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="tdocidId" Type="varchar" MaxLength="30" />
+    <Property Name="numDocId" Type="varchar" MaxLength="20" />
+    <Property Name="centroLaboral" Type="varchar" MaxLength="20" />
+    <Property Name="ubigeoId" Type="varchar" MaxLength="6" />
+    <Property Name="antecedentesPatologicos" Type="text" />
+    <Property Name="nroHistCli" Type="int" />
+    <Property Name="flagEntrevistado" Type="char" MaxLength="1" />
+    <Property Name="comentario" Type="text" />
+    <Property Name="tipoEdadId" Type="varchar" MaxLength="30" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="estadoLesionadoId" Type="varchar" MaxLength="30" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_Marca_Vehiculo">
+    <Key>
+      <PropertyRef Name="marcaVehiculoId" />
+    </Key>
+    <Property Name="marcaVehiculoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="marcaVehiculo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_MedicoAuditor">
+    <Key>
+      <PropertyRef Name="medicoAuditorId" />
+    </Key>
+    <Property Name="medicoAuditorId" Type="int" Nullable="false" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="upadate" Type="varchar" MaxLength="20" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="nombreMedAuditor" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="AUD_MedicoAuditorxCasoMedico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="medicoAuditorId" Type="int" Nullable="false" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="fechaAsignacion" Type="datetime" />
+    <Property Name="motivoReemplazo" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="int" />
+    <Property Name="fechaNotificacionMedico" Type="datetime" />
+    <Property Name="fechaInicioAuditoria" Type="datetime" />
+    <Property Name="siniestroId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="centroMedicoId" Type="numeric" Precision="5" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="AUD_MedioEvacuacion">
+    <Key>
+      <PropertyRef Name="medioEvacuacionId" />
+    </Key>
+    <Property Name="medioEvacuacionId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_MedioTraslado">
+    <Key>
+      <PropertyRef Name="medioTrasladoId" />
+    </Key>
+    <Property Name="medioTrasladoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_Modelo_Vehiculo">
+    <Key>
+      <PropertyRef Name="modeloVehiculoId" />
+    </Key>
+    <Property Name="marcaVehiculoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="modeloVehiculoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="claseVehiculoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="modeloVehiculo" Type="varchar" MaxLength="100" />
+    <Property Name="inicioVigencia" Type="datetime" />
+    <Property Name="finVigencia" Type="datetime" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_MontoCobertura">
+    <Key>
+      <PropertyRef Name="montoCoberturaId" />
+    </Key>
+    <Property Name="montoCoberturaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCobertura" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="numeroUIT" Type="int" />
+    <Property Name="valorUIT" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="montoMaximoCobertura" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="fechaInicioVigencia" Type="datetime" />
+    <Property Name="fechaFinVigencia" Type="datetime" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_MotivoEmision">
+    <Key>
+      <PropertyRef Name="motivoEmisionId" />
+    </Key>
+    <Property Name="montoEstimado" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="motivoEmisionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="TipoMotivoEmision" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_MotivoRegistro">
+    <Key>
+      <PropertyRef Name="motivoRegistroId" />
+    </Key>
+    <Property Name="motivoRegistroId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_ParametrosAuditoria">
+    <Key>
+      <PropertyRef Name="parametroId" />
+    </Key>
+    <Property Name="parametroId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="inicioVigencia" Type="datetime" />
+    <Property Name="finVigencia" Type="datetime" />
+    <Property Name="valorUIT" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="periodoLaborable" Type="int" />
+    <Property Name="sueldoMinimoVital" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="maxDiasIncapacidad" Type="int" />
+    <Property Name="renumeracionDiaria" Type="numeric" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="AUD_PersonaAutorizacionTraslado">
+    <Key>
+      <PropertyRef Name="personaAutorizoTrasladoId" />
+    </Key>
+    <Property Name="personaAutorizoTrasladoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_PosicionAccidentado">
+    <Key>
+      <PropertyRef Name="posicionAccidentadoId" />
+    </Key>
+    <Property Name="posicionAccidentadoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_PrioridadDiagnostico">
+    <Key>
+      <PropertyRef Name="prioridadDiagnosticoId" />
+    </Key>
+    <Property Name="prioridadDiagnosticoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_Siniestro">
+    <Key>
+      <PropertyRef Name="siniestroId" />
+    </Key>
+    <Property Name="siniestroId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="numPlaca" Type="varchar" MaxLength="20" />
+    <Property Name="fechaSiniestro" Type="datetime" />
+    <Property Name="fechaActivService" Type="datetime" />
+    <Property Name="numPoliza" Type="varchar" MaxLength="100" />
+    <Property Name="numCertificadoSOAT" Type="varchar" MaxLength="100" />
+    <Property Name="usoVehiculo" Type="varchar" MaxLength="100" />
+    <Property Name="numSiniestro" Type="varchar" MaxLength="100" />
+    <Property Name="numAtencion" Type="varchar" MaxLength="100" />
+    <Property Name="usoVehiculoSiniestro" Type="varchar" MaxLength="100" />
+    <Property Name="ubigeoId" Type="varchar" MaxLength="6" />
+    <Property Name="observaciones" Type="text" />
+    <Property Name="inicioVigenciaPoliza" Type="datetime" />
+    <Property Name="finVigenciaPoliza" Type="datetime" />
+    <Property Name="nombreNotificante" Type="varchar" MaxLength="100" />
+    <Property Name="numDocId" Type="varchar" MaxLength="20" />
+    <Property Name="telefonoNotificante" Type="varchar" MaxLength="20" />
+    <Property Name="parentescoNotificante" Type="varchar" MaxLength="20" />
+    <Property Name="nombreComisaria" Type="varchar" MaxLength="20" />
+    <Property Name="fechaDenuncia" Type="datetime" />
+    <Property Name="cantidadLesionados" Type="int" />
+    <Property Name="nombreConductor" Type="varchar" MaxLength="100" />
+    <Property Name="clienteId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="telefonoConductor" Type="varchar" MaxLength="20" />
+    <Property Name="fechaComunicacion" Type="datetime" />
+    <Property Name="analistaSOAT" Type="varchar" MaxLength="100" />
+    <Property Name="nombreProcuradorAsignado" Type="varchar" MaxLength="100" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="tipoPolizaId" Type="varchar" MaxLength="30" />
+    <Property Name="motivoRegistroId" Type="varchar" MaxLength="30" />
+    <Property Name="tipoComunicacionId" Type="varchar" MaxLength="30" />
+    <Property Name="tipoSiniestroId" Type="varchar" MaxLength="30" />
+    <Property Name="estadoProcuraduriaId" Type="varchar" MaxLength="30" />
+    <Property Name="modeloVehiculoId" Type="numeric" Precision="5" />
+    <Property Name="tdocId" Type="varchar" MaxLength="30" />
+    <Property Name="contratanteSoat" Type="varchar" MaxLength="100" />
+    <Property Name="telefonoContratante" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AUD_TarifarioMinsa">
+    <Key>
+      <PropertyRef Name="tarifarioMinsaId" />
+    </Key>
+    <Property Name="tarifarioMinsaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="predecesorId" Type="numeric" Precision="5" />
+    <Property Name="nivelTipo" Type="int" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TarifarioSegus">
+    <Key>
+      <PropertyRef Name="tarifarioSEGUSid" />
+    </Key>
+    <Property Name="tarifarioSEGUSid" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="predecesorId" Type="varchar" MaxLength="20" />
+    <Property Name="nombreTarifario" Type="varchar" MaxLength="250" />
+    <Property Name="nivelTipo" Type="int" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="datetime" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_Terapias">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="ampliatorioId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="codigoTerapia" Type="varchar" MaxLength="20" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="proveedor" Type="varchar" MaxLength="100" />
+    <Property Name="tipoTerapia" Type="varchar" MaxLength="100" />
+    <Property Name="cantidad" Type="int" />
+    <Property Name="precio" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AUD_TipoAlertaCasoMedico">
+    <Key>
+      <PropertyRef Name="tipoAlertaCasoMedicoId" />
+    </Key>
+    <Property Name="tipoAlertaCasoMedicoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoAlertaxCasoMedico">
+    <Key>
+      <PropertyRef Name="alertaCasoId" />
+    </Key>
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="tipoAlertaCasoMedicoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="alertaCasoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="uaudit" Type="varchar" MaxLength="20" />
+    <Property Name="descripcionAtencion" Type="text" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="descripcionAlerta" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="AUD_TipoAtencion">
+    <Key>
+      <PropertyRef Name="tipoAtencionId" />
+    </Key>
+    <Property Name="tipoAtencionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="prioridad" Type="int" />
+  </EntityType>
+  <EntityType Name="AUD_TipoCentroMedico">
+    <Key>
+      <PropertyRef Name="tipoCentroMedicoId" />
+    </Key>
+    <Property Name="tipoCentroMedicoId" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoCobertura">
+    <Key>
+      <PropertyRef Name="nombreCobertura" />
+    </Key>
+    <Property Name="nombreCobertura" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoComunicacion">
+    <Key>
+      <PropertyRef Name="tipoComunicacionId" />
+    </Key>
+    <Property Name="tipoComunicacionId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoDiagnostico">
+    <Key>
+      <PropertyRef Name="tipoDiagnosticoId" />
+    </Key>
+    <Property Name="tipoDiagnosticoId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoEdad">
+    <Key>
+      <PropertyRef Name="tipoEdadId" />
+    </Key>
+    <Property Name="tipoEdadId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoInvalidez">
+    <Key>
+      <PropertyRef Name="tipoInvalidez" />
+    </Key>
+    <Property Name="tipoInvalidez" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoMotivo">
+    <Key>
+      <PropertyRef Name="TipoMotivoEmision" />
+    </Key>
+    <Property Name="TipoMotivoEmision" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoPoliza">
+    <Key>
+      <PropertyRef Name="tipoPolizaId" />
+    </Key>
+    <Property Name="tipoPolizaId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoReservaxCasoMedico">
+    <Key>
+      <PropertyRef Name="tipoReservaCasoId" />
+    </Key>
+    <Property Name="tipoReservaCasoId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="montoReserva" Type="numeric" Precision="10" Scale="2" />
+    <Property Name="diasIncapacidadn" Type="int" />
+    <Property Name="porcentajeInvalidez" Type="numeric" Precision="5" Scale="2" />
+    <Property Name="nombreCobertura" Type="varchar" MaxLength="20" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_TipoSiniestro">
+    <Key>
+      <PropertyRef Name="tipoSiniestroId" />
+    </Key>
+    <Property Name="tipoSiniestroId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="AUD_VisitaMedica">
+    <Key>
+      <PropertyRef Name="visitaMedicaId" />
+    </Key>
+    <Property Name="visitaMedicaId" Type="numeric" Nullable="false" Precision="5" StoreGeneratedPattern="Identity" />
+    <Property Name="casoMedicoId" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="tipoVisita" Type="varchar" MaxLength="1" />
+    <Property Name="fechaVisita" Type="datetime" />
+    <Property Name="fechaReprogramacion" Type="datetime" />
+    <Property Name="comentario" Type="text" />
+    <Property Name="fechaRealizacion" Type="datetime" />
+    <Property Name="estadoVisita" Type="varchar" MaxLength="1" />
+    <Property Name="centroMedicoId" Type="numeric" Precision="5" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ampliatorioId" Type="numeric" Precision="5" />
+  </EntityType>
+  <EntityType Name="Sys_Acceso">
+    <Key>
+      <PropertyRef Name="funcionalidadId" />
+      <PropertyRef Name="rolId" />
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="funcionalidadId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="rolId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="appId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Sys_AccesoUsuario">
+    <Key>
+      <PropertyRef Name="funcionalidadId" />
+      <PropertyRef Name="appId" />
+      <PropertyRef Name="usuarioId" />
+    </Key>
+    <Property Name="funcionalidadId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="appId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="usuarioId" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Sys_App">
+    <Key>
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="appId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="app" Type="varchar" MaxLength="250" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Sys_Funcionalidad">
+    <Key>
+      <PropertyRef Name="funcionalidadId" />
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="funcionalidadId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="funcionalidad" Type="varchar" MaxLength="250" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="appId" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Sys_Rol">
+    <Key>
+      <PropertyRef Name="rolId" />
+      <PropertyRef Name="appid" />
+    </Key>
+    <Property Name="rolId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="appid" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="rol" Type="varchar" MaxLength="250" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Sys_RolUsuario">
+    <Key>
+      <PropertyRef Name="usuarioId" />
+      <PropertyRef Name="rolId" />
+      <PropertyRef Name="appId" />
+    </Key>
+    <Property Name="usuarioId" Type="int" Nullable="false" />
+    <Property Name="rolId" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="appId" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Sys_Usuario">
+    <Key>
+      <PropertyRef Name="usuarioId" />
+    </Key>
+    <Property Name="usuarioId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fcrea" Type="datetime" />
+    <Property Name="fupdate" Type="datetime" />
+    <Property Name="clave" Type="varchar" MaxLength="20" />
+    <Property Name="pc" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="1" />
+    <Property Name="ucrea" Type="varchar" MaxLength="20" />
+    <Property Name="usuario" Type="varchar" MaxLength="20" />
+    <Property Name="uupdate" Type="varchar" MaxLength="20" />
+    <Property Name="ciaId" Type="int" />
+  </EntityType>
+  <Association Name="FK__Adm_Asegu__asegu__24927208">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Asegurado" Type="audimedModel.Store.Adm_Asegurado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Asegurado">
+        <PropertyRef Name="aseguradoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Asegu__perso__60F24029">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Aseguradora" Type="audimedModel.Store.Adm_Aseguradora" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Aseguradora">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Benef__benef__25869641">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Beneficiario" Type="audimedModel.Store.Adm_Beneficiario" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Beneficiario">
+        <PropertyRef Name="beneficiarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Broke__perso__61E66462">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Broker" Type="audimedModel.Store.Adm_Broker" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Broker">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Clien__perso__267ABA7A">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Cliente" Type="audimedModel.Store.Adm_Cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Cliente">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Direc__perso__2B3F6F97">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Direccion" Type="audimedModel.Store.Adm_Direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Direccion">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Direc__tdire__2A4B4B5E">
+    <End Role="Adm_TDireccion" Type="audimedModel.Store.Adm_TDireccion" Multiplicity="1" />
+    <End Role="Adm_Direccion" Type="audimedModel.Store.Adm_Direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_TDireccion">
+        <PropertyRef Name="tdireccionId" />
+      </Principal>
+      <Dependent Role="Adm_Direccion">
+        <PropertyRef Name="tdireccionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Direc__ubige__75AE3144">
+    <End Role="Adm_Ubigeo" Type="audimedModel.Store.Adm_Ubigeo" Multiplicity="0..1" />
+    <End Role="Adm_Direccion" Type="audimedModel.Store.Adm_Direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Ubigeo">
+        <PropertyRef Name="ubigeoId" />
+      </Principal>
+      <Dependent Role="Adm_Direccion">
+        <PropertyRef Name="ubigeoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_DocId__perso__2C3393D0">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_DocId" Type="audimedModel.Store.Adm_DocId" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_DocId">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_DocId__tdoci__2D27B809">
+    <End Role="Adm_TDocId" Type="audimedModel.Store.Adm_TDocId" Multiplicity="1" />
+    <End Role="Adm_DocId" Type="audimedModel.Store.Adm_DocId" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_TDocId">
+        <PropertyRef Name="tdocidId" />
+      </Principal>
+      <Dependent Role="Adm_DocId">
+        <PropertyRef Name="tdocidId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Emple__perso__2E1BDC42">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Empleado" Type="audimedModel.Store.Adm_Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Empleado">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Model__clase__7A72E661">
+    <End Role="Adm_ClaseVehiculo" Type="audimedModel.Store.Adm_ClaseVehiculo" Multiplicity="1" />
+    <End Role="Adm_ModeloVehiculo" Type="audimedModel.Store.Adm_ModeloVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_ClaseVehiculo">
+        <PropertyRef Name="claseVehiculoId" />
+      </Principal>
+      <Dependent Role="Adm_ModeloVehiculo">
+        <PropertyRef Name="claseVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Model__marca__7B670A9A">
+    <End Role="Adm_MarcaVehiculo" Type="audimedModel.Store.Adm_MarcaVehiculo" Multiplicity="1" />
+    <End Role="Adm_ModeloVehiculo" Type="audimedModel.Store.Adm_ModeloVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_MarcaVehiculo">
+        <PropertyRef Name="marcaVehiculoId" />
+      </Principal>
+      <Dependent Role="Adm_ModeloVehiculo">
+        <PropertyRef Name="marcaVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Perso__conta__35BCFE0A">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="0..1" />
+    <End Role="Adm_Persona1" Type="audimedModel.Store.Adm_Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Persona1">
+        <PropertyRef Name="contactodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Perso__estad__33D4B598">
+    <End Role="Adm_EstadoCivil" Type="audimedModel.Store.Adm_EstadoCivil" Multiplicity="0..1" />
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_EstadoCivil">
+        <PropertyRef Name="estadoCivilId" />
+      </Principal>
+      <Dependent Role="Adm_Persona">
+        <PropertyRef Name="estadoCivilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_TCamb__moned__36B12243">
+    <End Role="Adm_Moneda" Type="audimedModel.Store.Adm_Moneda" Multiplicity="1" />
+    <End Role="Adm_TCambio" Type="audimedModel.Store.Adm_TCambio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Moneda">
+        <PropertyRef Name="monedaId" />
+      </Principal>
+      <Dependent Role="Adm_TCambio">
+        <PropertyRef Name="monedaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Telef__perso__37A5467C">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_TelefonoPersona" Type="audimedModel.Store.Adm_TelefonoPersona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_TelefonoPersona">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Adm_Telef__ttele__38996AB5">
+    <End Role="Adm_TTelefono" Type="audimedModel.Store.Adm_TTelefono" Multiplicity="0..1" />
+    <End Role="Adm_TelefonoPersona" Type="audimedModel.Store.Adm_TelefonoPersona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_TTelefono">
+        <PropertyRef Name="ttelefonoId" />
+      </Principal>
+      <Dependent Role="Adm_TelefonoPersona">
+        <PropertyRef Name="ttelefonoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_AltaM__casoM__1D9C270D">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AltaMedica" Type="audimedModel.Store.AUD_AltaMedica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AltaMedica">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_AmpCo__centr__17A35695">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="1" />
+    <End Role="AUD_AmpConsultaAmbulatoria" Type="audimedModel.Store.AUD_AmpConsultaAmbulatoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AmpConsultaAmbulatoria">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ampli__casoM__3044E72D">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ampli__motiv__2E5C9EBB">
+    <End Role="AUD_MotivoEmision" Type="audimedModel.Store.AUD_MotivoEmision" Multiplicity="0..1" />
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MotivoEmision">
+        <PropertyRef Name="motivoEmisionId" />
+      </Principal>
+      <Dependent Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="motivoEmisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Anexo__sinie__0D65BF44">
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="1" />
+    <End Role="AUD_AnexoSiniestro" Type="audimedModel.Store.AUD_AnexoSiniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Siniestro">
+        <PropertyRef Name="siniestroId" />
+      </Principal>
+      <Dependent Role="AUD_AnexoSiniestro">
+        <PropertyRef Name="siniestroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__casoM__1BB3DE9B">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AtencionAnterior" Type="audimedModel.Store.AUD_AtencionAnterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionAnterior">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__casoM__1E904B46">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AtencionInicial" Type="audimedModel.Store.AUD_AtencionInicial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionInicial">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__centr__3B0C8E63">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_AtencionInicial" Type="audimedModel.Store.AUD_AtencionInicial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionInicial">
+        <PropertyRef Name="centroMedicoTrasladarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__centr__3C00B29C">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_AtencionInicial" Type="audimedModel.Store.AUD_AtencionInicial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionInicial">
+        <PropertyRef Name="centroMedicoInicioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__centr__64CDBE05">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_AtencionAnterior" Type="audimedModel.Store.AUD_AtencionAnterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionAnterior">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__medio__3CF4D6D5">
+    <End Role="AUD_MedioTraslado" Type="audimedModel.Store.AUD_MedioTraslado" Multiplicity="0..1" />
+    <End Role="AUD_AtencionInicial" Type="audimedModel.Store.AUD_AtencionInicial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedioTraslado">
+        <PropertyRef Name="medioTrasladoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionInicial">
+        <PropertyRef Name="medioTrasladoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__medio__3DE8FB0E">
+    <End Role="AUD_MedioEvacuacion" Type="audimedModel.Store.AUD_MedioEvacuacion" Multiplicity="0..1" />
+    <End Role="AUD_AtencionInicial" Type="audimedModel.Store.AUD_AtencionInicial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedioEvacuacion">
+        <PropertyRef Name="medioEvacuacionId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionInicial">
+        <PropertyRef Name="medioEvacuacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__medio__65C1E23E">
+    <End Role="AUD_MedioTraslado" Type="audimedModel.Store.AUD_MedioTraslado" Multiplicity="0..1" />
+    <End Role="AUD_AtencionAnterior" Type="audimedModel.Store.AUD_AtencionAnterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedioTraslado">
+        <PropertyRef Name="medioTrasladoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionAnterior">
+        <PropertyRef Name="medioTrasladoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__medio__66B60677">
+    <End Role="AUD_MedioEvacuacion" Type="audimedModel.Store.AUD_MedioEvacuacion" Multiplicity="0..1" />
+    <End Role="AUD_AtencionAnterior" Type="audimedModel.Store.AUD_AtencionAnterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedioEvacuacion">
+        <PropertyRef Name="medioEvacuacionId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionAnterior">
+        <PropertyRef Name="medioEvacuacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Atenc__perso__63D999CC">
+    <End Role="AUD_PersonaAutorizacionTraslado" Type="audimedModel.Store.AUD_PersonaAutorizacionTraslado" Multiplicity="0..1" />
+    <End Role="AUD_AtencionAnterior" Type="audimedModel.Store.AUD_AtencionAnterior" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_PersonaAutorizacionTraslado">
+        <PropertyRef Name="personaAutorizoTrasladoId" />
+      </Principal>
+      <Dependent Role="AUD_AtencionAnterior">
+        <PropertyRef Name="personaAutorizoTrasladoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Carta__casoM__1ABFBA62">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_CartaGarantia" Type="audimedModel.Store.AUD_CartaGarantia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CartaGarantia">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Carta__centr__1AF4C48C">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="1" />
+    <End Role="AUD_CartaGarantia" Type="audimedModel.Store.AUD_CartaGarantia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CartaGarantia">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Carta__motiv__1A00A053">
+    <End Role="AUD_MotivoEmision" Type="audimedModel.Store.AUD_MotivoEmision" Multiplicity="0..1" />
+    <End Role="AUD_CartaGarantia" Type="audimedModel.Store.AUD_CartaGarantia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MotivoEmision">
+        <PropertyRef Name="motivoEmisionId" />
+      </Principal>
+      <Dependent Role="AUD_CartaGarantia">
+        <PropertyRef Name="motivoEmisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__calif__10422BEF">
+    <End Role="AUD_CalificacionAuditoria" Type="audimedModel.Store.AUD_CalificacionAuditoria" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CalificacionAuditoria">
+        <PropertyRef Name="calificacionAuditoriaId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="calificacionAuditoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__casoM__0D30B51A">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_CasoMedicoxTipoAtencion" Type="audimedModel.Store.AUD_CasoMedicoxTipoAtencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedicoxTipoAtencion">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__casoM__19CB9629">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_CasoMedicoxTipoCobertura" Type="audimedModel.Store.AUD_CasoMedicoxTipoCobertura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedicoxTipoCobertura">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__centr__11365028">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__estad__122A7461">
+    <End Role="AUD_Estado" Type="audimedModel.Store.AUD_Estado" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Estado">
+        <PropertyRef Name="estadoCasoId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="estadoCasoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__medic__1412BCD3">
+    <End Role="AUD_MedicoAuditor" Type="audimedModel.Store.AUD_MedicoAuditor" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedicoAuditor">
+        <PropertyRef Name="medicoAuditorId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="medicoAuditorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__nombr__019F06DD">
+    <End Role="AUD_TipoCobertura" Type="audimedModel.Store.AUD_TipoCobertura" Multiplicity="1" />
+    <End Role="AUD_CasoMedicoxTipoCobertura" Type="audimedModel.Store.AUD_CasoMedicoxTipoCobertura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoCobertura">
+        <PropertyRef Name="nombreCobertura" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedicoxTipoCobertura">
+        <PropertyRef Name="nombreCobertura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__posic__15FB0545">
+    <End Role="AUD_PosicionAccidentado" Type="audimedModel.Store.AUD_PosicionAccidentado" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_PosicionAccidentado">
+        <PropertyRef Name="posicionAccidentadoId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="posicionAccidentadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__sinie__1506E10C">
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Siniestro">
+        <PropertyRef Name="siniestroId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="siniestroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__tipoA__0E24D953">
+    <End Role="AUD_TipoAtencion" Type="audimedModel.Store.AUD_TipoAtencion" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedicoxTipoAtencion" Type="audimedModel.Store.AUD_CasoMedicoxTipoAtencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoAtencion">
+        <PropertyRef Name="tipoAtencionId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedicoxTipoAtencion">
+        <PropertyRef Name="tipoAtencionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CasoM__tipoA__131E989A">
+    <End Role="AUD_TipoAtencion" Type="audimedModel.Store.AUD_TipoAtencion" Multiplicity="0..1" />
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoAtencion">
+        <PropertyRef Name="tipoAtencionId" />
+      </Principal>
+      <Dependent Role="AUD_CasoMedico">
+        <PropertyRef Name="tipoAtencionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Centr__casoM__2260DC2A">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_CentroMedicoxCasoMedico" Type="audimedModel.Store.AUD_CentroMedicoxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CentroMedicoxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Centr__centr__371C01EE">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="1" />
+    <End Role="AUD_CentroMedicoxCasoMedico" Type="audimedModel.Store.AUD_CentroMedicoxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CentroMedicoxCasoMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Centr__medio__3533B97C">
+    <End Role="AUD_MedioTraslado" Type="audimedModel.Store.AUD_MedioTraslado" Multiplicity="0..1" />
+    <End Role="AUD_CentroMedicoxCasoMedico" Type="audimedModel.Store.AUD_CentroMedicoxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedioTraslado">
+        <PropertyRef Name="medioTrasladoId" />
+      </Principal>
+      <Dependent Role="AUD_CentroMedicoxCasoMedico">
+        <PropertyRef Name="medioTrasladoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Centr__tipoC__334B710A">
+    <End Role="AUD_TipoCentroMedico" Type="audimedModel.Store.AUD_TipoCentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoCentroMedico">
+        <PropertyRef Name="tipoCentroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_CentroMedico">
+        <PropertyRef Name="tipoCentroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_CIE__categor__4BE214AA">
+    <End Role="AUD_CategoriaDiagnostico" Type="audimedModel.Store.AUD_CategoriaDiagnostico" Multiplicity="1" />
+    <End Role="AUD_CIE" Type="audimedModel.Store.AUD_CIE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CategoriaDiagnostico">
+        <PropertyRef Name="categoriaDiagnosticoId" />
+      </Principal>
+      <Dependent Role="AUD_CIE">
+        <PropertyRef Name="categoriaDiagnosticoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Conve__centr__269B8162">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="1" />
+    <End Role="AUD_ConvenioSegus" Type="audimedModel.Store.AUD_ConvenioSegus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_ConvenioSegus">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Conve__exame__25A75D29">
+    <End Role="AUD_ExamenSegus" Type="audimedModel.Store.AUD_ExamenSegus" Multiplicity="1" />
+    <End Role="AUD_ConvenioSegus" Type="audimedModel.Store.AUD_ConvenioSegus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_ExamenSegus">
+        <PropertyRef Name="examenSegusId" />
+      </Principal>
+      <Dependent Role="AUD_ConvenioSegus">
+        <PropertyRef Name="examenSegusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Diagn__casoM__5299FF31">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_Diagnosticos" Type="audimedModel.Store.AUD_Diagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_Diagnosticos">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Diagn__cieId__30C40A1A">
+    <End Role="AUD_CIE" Type="audimedModel.Store.AUD_CIE" Multiplicity="1" />
+    <End Role="AUD_Diagnosticos" Type="audimedModel.Store.AUD_Diagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CIE">
+        <PropertyRef Name="cieId" />
+      </Principal>
+      <Dependent Role="AUD_Diagnosticos">
+        <PropertyRef Name="cieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Diagn__cieId__4CD638E3">
+    <End Role="AUD_CIE" Type="audimedModel.Store.AUD_CIE" Multiplicity="1" />
+    <End Role="AUD_DiagnosticoxInvalidez" Type="audimedModel.Store.AUD_DiagnosticoxInvalidez" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CIE">
+        <PropertyRef Name="cieId" />
+      </Principal>
+      <Dependent Role="AUD_DiagnosticoxInvalidez">
+        <PropertyRef Name="cieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Diagn__prior__2DE79D6F">
+    <End Role="AUD_PrioridadDiagnostico" Type="audimedModel.Store.AUD_PrioridadDiagnostico" Multiplicity="0..1" />
+    <End Role="AUD_Diagnosticos" Type="audimedModel.Store.AUD_Diagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_PrioridadDiagnostico">
+        <PropertyRef Name="prioridadDiagnosticoId" />
+      </Principal>
+      <Dependent Role="AUD_Diagnosticos">
+        <PropertyRef Name="prioridadDiagnosticoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Diagn__tipoD__2EDBC1A8">
+    <End Role="AUD_TipoDiagnostico" Type="audimedModel.Store.AUD_TipoDiagnostico" Multiplicity="0..1" />
+    <End Role="AUD_Diagnosticos" Type="audimedModel.Store.AUD_Diagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoDiagnostico">
+        <PropertyRef Name="tipoDiagnosticoId" />
+      </Principal>
+      <Dependent Role="AUD_Diagnosticos">
+        <PropertyRef Name="tipoDiagnosticoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Estad__casoM__55766BDC">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_EstadoxCasoMedico" Type="audimedModel.Store.AUD_EstadoxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_EstadoxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Estad__estad__548247A3">
+    <End Role="AUD_Estado" Type="audimedModel.Store.AUD_Estado" Multiplicity="1" />
+    <End Role="AUD_EstadoxCasoMedico" Type="audimedModel.Store.AUD_EstadoxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Estado">
+        <PropertyRef Name="estadoCasoId" />
+      </Principal>
+      <Dependent Role="AUD_EstadoxCasoMedico">
+        <PropertyRef Name="estadoCasoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Exame__casoM__18D771F0">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_ExamenxCasoMedico" Type="audimedModel.Store.AUD_ExamenxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_ExamenxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Exame__exame__2A6C1246">
+    <End Role="AUD_ExamenMinsa" Type="audimedModel.Store.AUD_ExamenMinsa" Multiplicity="0..1" />
+    <End Role="AUD_ExamenxCasoMedico" Type="audimedModel.Store.AUD_ExamenxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_ExamenMinsa">
+        <PropertyRef Name="examenMinsaId" />
+      </Principal>
+      <Dependent Role="AUD_ExamenxCasoMedico">
+        <PropertyRef Name="examenMinsaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Exame__exame__2B60367F">
+    <End Role="AUD_ExamenSegus" Type="audimedModel.Store.AUD_ExamenSegus" Multiplicity="0..1" />
+    <End Role="AUD_ExamenxCasoMedico" Type="audimedModel.Store.AUD_ExamenxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_ExamenSegus">
+        <PropertyRef Name="examenSegusId" />
+      </Principal>
+      <Dependent Role="AUD_ExamenxCasoMedico">
+        <PropertyRef Name="examenSegusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Exame__tarif__278FA59B">
+    <End Role="AUD_TarifarioSegus" Type="audimedModel.Store.AUD_TarifarioSegus" Multiplicity="1" />
+    <End Role="AUD_ExamenSegus" Type="audimedModel.Store.AUD_ExamenSegus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TarifarioSegus">
+        <PropertyRef Name="tarifarioSEGUSid" />
+      </Principal>
+      <Dependent Role="AUD_ExamenSegus">
+        <PropertyRef Name="tarifarioSEGUSid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Exame__tarif__3FB147EF">
+    <End Role="AUD_TarifarioMinsa" Type="audimedModel.Store.AUD_TarifarioMinsa" Multiplicity="1" />
+    <End Role="AUD_ExamenMinsa" Type="audimedModel.Store.AUD_ExamenMinsa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TarifarioMinsa">
+        <PropertyRef Name="tarifarioMinsaId" />
+      </Principal>
+      <Dependent Role="AUD_ExamenMinsa">
+        <PropertyRef Name="tarifarioMinsaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ficha__casoM__566A9015">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_FichaCartasReservas" Type="audimedModel.Store.AUD_FichaCartasReservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_FichaCartasReservas">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ficha__casoM__575EB44E">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_FichaExamenesDiagnosticos" Type="audimedModel.Store.AUD_FichaExamenesDiagnosticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_FichaExamenesDiagnosticos">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ficha__casoM__5852D887">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_FichaObservacion" Type="audimedModel.Store.AUD_FichaObservacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_FichaObservacion">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Ficha__tipoA__4A4ED1F3">
+    <End Role="AUD_TipoAlertaCasoMedico" Type="audimedModel.Store.AUD_TipoAlertaCasoMedico" Multiplicity="0..1" />
+    <End Role="AUD_FichaObservacion" Type="audimedModel.Store.AUD_FichaObservacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoAlertaCasoMedico">
+        <PropertyRef Name="tipoAlertaCasoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_FichaObservacion">
+        <PropertyRef Name="tipoAlertaCasoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Inval__casoM__02B326A7">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_InvalidezxCasoMedico" Type="audimedModel.Store.AUD_InvalidezxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_InvalidezxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Inval__inval__01BF026E">
+    <End Role="AUD_Invalidez" Type="audimedModel.Store.AUD_Invalidez" Multiplicity="1" />
+    <End Role="AUD_InvalidezxCasoMedico" Type="audimedModel.Store.AUD_InvalidezxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Invalidez">
+        <PropertyRef Name="invalidezId" />
+      </Principal>
+      <Dependent Role="AUD_InvalidezxCasoMedico">
+        <PropertyRef Name="invalidezId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Inval__tipoI__7FD6B9FC">
+    <End Role="AUD_TipoInvalidez" Type="audimedModel.Store.AUD_TipoInvalidez" Multiplicity="0..1" />
+    <End Role="AUD_Invalidez" Type="audimedModel.Store.AUD_Invalidez" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoInvalidez">
+        <PropertyRef Name="tipoInvalidez" />
+      </Principal>
+      <Dependent Role="AUD_Invalidez">
+        <PropertyRef Name="tipoInvalidez" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Inval__tipoR__4CE125DB">
+    <End Role="AUD_TipoReservaxCasoMedico" Type="audimedModel.Store.AUD_TipoReservaxCasoMedico" Multiplicity="0..1" />
+    <End Role="AUD_InvalidezxCasoMedico" Type="audimedModel.Store.AUD_InvalidezxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoReservaxCasoMedico">
+        <PropertyRef Name="tipoReservaCasoId" />
+      </Principal>
+      <Dependent Role="AUD_InvalidezxCasoMedico">
+        <PropertyRef Name="tipoReservaCasoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Lesio__casoM__5946FCC0">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_Lesionado" Type="audimedModel.Store.AUD_Lesionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_Lesionado">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Lesio__estad__31832429">
+    <End Role="AUD_EstadoLesionado" Type="audimedModel.Store.AUD_EstadoLesionado" Multiplicity="0..1" />
+    <End Role="AUD_Lesionado" Type="audimedModel.Store.AUD_Lesionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_EstadoLesionado">
+        <PropertyRef Name="estadoLesionadoId" />
+      </Principal>
+      <Dependent Role="AUD_Lesionado">
+        <PropertyRef Name="estadoLesionadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Lesio__tipoE__32774862">
+    <End Role="AUD_TipoEdad" Type="audimedModel.Store.AUD_TipoEdad" Multiplicity="0..1" />
+    <End Role="AUD_Lesionado" Type="audimedModel.Store.AUD_Lesionado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoEdad">
+        <PropertyRef Name="tipoEdadId" />
+      </Principal>
+      <Dependent Role="AUD_Lesionado">
+        <PropertyRef Name="tipoEdadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Medic__casoM__6ADB9D16">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_MedicoAuditorxCasoMedico" Type="audimedModel.Store.AUD_MedicoAuditorxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_MedicoAuditorxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Medic__centr__6CC3E588">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_MedicoAuditorxCasoMedico" Type="audimedModel.Store.AUD_MedicoAuditorxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_MedicoAuditorxCasoMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Medic__medic__69E778DD">
+    <End Role="AUD_MedicoAuditor" Type="audimedModel.Store.AUD_MedicoAuditor" Multiplicity="1" />
+    <End Role="AUD_MedicoAuditorxCasoMedico" Type="audimedModel.Store.AUD_MedicoAuditorxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MedicoAuditor">
+        <PropertyRef Name="medicoAuditorId" />
+      </Principal>
+      <Dependent Role="AUD_MedicoAuditorxCasoMedico">
+        <PropertyRef Name="medicoAuditorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Medic__sinie__6BCFC14F">
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="1" />
+    <End Role="AUD_MedicoAuditorxCasoMedico" Type="audimedModel.Store.AUD_MedicoAuditorxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Siniestro">
+        <PropertyRef Name="siniestroId" />
+      </Principal>
+      <Dependent Role="AUD_MedicoAuditorxCasoMedico">
+        <PropertyRef Name="siniestroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Model__clase__02E830D1">
+    <End Role="AUD_Clase_Vehiculo" Type="audimedModel.Store.AUD_Clase_Vehiculo" Multiplicity="1" />
+    <End Role="AUD_Modelo_Vehiculo" Type="audimedModel.Store.AUD_Modelo_Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Clase_Vehiculo">
+        <PropertyRef Name="claseVehiculoId" />
+      </Principal>
+      <Dependent Role="AUD_Modelo_Vehiculo">
+        <PropertyRef Name="claseVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Model__marca__03DC550A">
+    <End Role="AUD_Marca_Vehiculo" Type="audimedModel.Store.AUD_Marca_Vehiculo" Multiplicity="1" />
+    <End Role="AUD_Modelo_Vehiculo" Type="audimedModel.Store.AUD_Modelo_Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Marca_Vehiculo">
+        <PropertyRef Name="marcaVehiculoId" />
+      </Principal>
+      <Dependent Role="AUD_Modelo_Vehiculo">
+        <PropertyRef Name="marcaVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Monto__nombr__50DBD3F1">
+    <End Role="AUD_TipoCobertura" Type="audimedModel.Store.AUD_TipoCobertura" Multiplicity="1" />
+    <End Role="AUD_MontoCobertura" Type="audimedModel.Store.AUD_MontoCobertura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoCobertura">
+        <PropertyRef Name="nombreCobertura" />
+      </Principal>
+      <Dependent Role="AUD_MontoCobertura">
+        <PropertyRef Name="nombreCobertura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Motiv__TipoM__1CDD0CFE">
+    <End Role="AUD_TipoMotivo" Type="audimedModel.Store.AUD_TipoMotivo" Multiplicity="1" />
+    <End Role="AUD_MotivoEmision" Type="audimedModel.Store.AUD_MotivoEmision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoMotivo">
+        <PropertyRef Name="TipoMotivoEmision" />
+      </Principal>
+      <Dependent Role="AUD_MotivoEmision">
+        <PropertyRef Name="TipoMotivoEmision" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__clien__0A895299">
+    <End Role="AUD_Cliente" Type="audimedModel.Store.AUD_Cliente" Multiplicity="1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Cliente">
+        <PropertyRef Name="clienteId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="clienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__estad__05C49D7C">
+    <End Role="AUD_EstadoProcuraduria" Type="audimedModel.Store.AUD_EstadoProcuraduria" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_EstadoProcuraduria">
+        <PropertyRef Name="estadoProcuraduriaId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="estadoProcuraduriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__motiv__08A10A27">
+    <End Role="AUD_MotivoRegistro" Type="audimedModel.Store.AUD_MotivoRegistro" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_MotivoRegistro">
+        <PropertyRef Name="motivoRegistroId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="motivoRegistroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__tipoC__07ACE5EE">
+    <End Role="AUD_TipoComunicacion" Type="audimedModel.Store.AUD_TipoComunicacion" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoComunicacion">
+        <PropertyRef Name="tipoComunicacionId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="tipoComunicacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__tipoP__09952E60">
+    <End Role="AUD_TipoPoliza" Type="audimedModel.Store.AUD_TipoPoliza" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoPoliza">
+        <PropertyRef Name="tipoPolizaId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="tipoPolizaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Sinie__tipoS__06B8C1B5">
+    <End Role="AUD_TipoSiniestro" Type="audimedModel.Store.AUD_TipoSiniestro" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoSiniestro">
+        <PropertyRef Name="tipoSiniestroId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="tipoSiniestroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Tarif__prede__2C545AB8">
+    <End Role="AUD_TarifarioSegus" Type="audimedModel.Store.AUD_TarifarioSegus" Multiplicity="0..1" />
+    <End Role="AUD_TarifarioSegus1" Type="audimedModel.Store.AUD_TarifarioSegus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TarifarioSegus">
+        <PropertyRef Name="tarifarioSEGUSid" />
+      </Principal>
+      <Dependent Role="AUD_TarifarioSegus1">
+        <PropertyRef Name="predecesorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Tarif__prede__5788D180">
+    <End Role="AUD_TarifarioMinsa" Type="audimedModel.Store.AUD_TarifarioMinsa" Multiplicity="0..1" />
+    <End Role="AUD_TarifarioMinsa1" Type="audimedModel.Store.AUD_TarifarioMinsa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TarifarioMinsa">
+        <PropertyRef Name="tarifarioMinsaId" />
+      </Principal>
+      <Dependent Role="AUD_TarifarioMinsa1">
+        <PropertyRef Name="predecesorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_TipoA__casoM__16EF297E">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_TipoAlertaxCasoMedico" Type="audimedModel.Store.AUD_TipoAlertaxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_TipoAlertaxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_TipoA__tipoA__5A502F92">
+    <End Role="AUD_TipoAlertaCasoMedico" Type="audimedModel.Store.AUD_TipoAlertaCasoMedico" Multiplicity="1" />
+    <End Role="AUD_TipoAlertaxCasoMedico" Type="audimedModel.Store.AUD_TipoAlertaxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_TipoAlertaCasoMedico">
+        <PropertyRef Name="tipoAlertaCasoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_TipoAlertaxCasoMedico">
+        <PropertyRef Name="tipoAlertaCasoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AUD_Visit__centr__675524F5">
+    <End Role="AUD_CentroMedico" Type="audimedModel.Store.AUD_CentroMedico" Multiplicity="0..1" />
+    <End Role="AUD_VisitaMedica" Type="audimedModel.Store.AUD_VisitaMedica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CentroMedico">
+        <PropertyRef Name="centroMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_VisitaMedica">
+        <PropertyRef Name="centroMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_Acces__usuar__03FC509B">
+    <End Role="Sys_Usuario" Type="audimedModel.Store.Sys_Usuario" Multiplicity="1" />
+    <End Role="Sys_AccesoUsuario" Type="audimedModel.Store.Sys_AccesoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Usuario">
+        <PropertyRef Name="usuarioId" />
+      </Principal>
+      <Dependent Role="Sys_AccesoUsuario">
+        <PropertyRef Name="usuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_Acceso__Funcionalidad">
+    <End Role="Sys_Funcionalidad" Type="audimedModel.Store.Sys_Funcionalidad" Multiplicity="1" />
+    <End Role="Sys_Acceso" Type="audimedModel.Store.Sys_Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Funcionalidad">
+        <PropertyRef Name="funcionalidadId" />
+        <PropertyRef Name="appId" />
+      </Principal>
+      <Dependent Role="Sys_Acceso">
+        <PropertyRef Name="funcionalidadId" />
+        <PropertyRef Name="appId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_AccesoUsuari__Funcionalidad">
+    <End Role="Sys_Funcionalidad" Type="audimedModel.Store.Sys_Funcionalidad" Multiplicity="1" />
+    <End Role="Sys_AccesoUsuario" Type="audimedModel.Store.Sys_AccesoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Funcionalidad">
+        <PropertyRef Name="funcionalidadId" />
+        <PropertyRef Name="appId" />
+      </Principal>
+      <Dependent Role="Sys_AccesoUsuario">
+        <PropertyRef Name="funcionalidadId" />
+        <PropertyRef Name="appId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_Funci__appId__3B75D760">
+    <End Role="Sys_App" Type="audimedModel.Store.Sys_App" Multiplicity="1" />
+    <End Role="Sys_Funcionalidad" Type="audimedModel.Store.Sys_Funcionalidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_App">
+        <PropertyRef Name="appId" />
+      </Principal>
+      <Dependent Role="Sys_Funcionalidad">
+        <PropertyRef Name="appId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_RolUs__usuar__07CCE17F">
+    <End Role="Sys_Usuario" Type="audimedModel.Store.Sys_Usuario" Multiplicity="1" />
+    <End Role="Sys_RolUsuario" Type="audimedModel.Store.Sys_RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Usuario">
+        <PropertyRef Name="usuarioId" />
+      </Principal>
+      <Dependent Role="Sys_RolUsuario">
+        <PropertyRef Name="usuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sys_Usuar__ciaId__1368B15D">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="0..1" />
+    <End Role="Sys_Usuario" Type="audimedModel.Store.Sys_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Sys_Usuario">
+        <PropertyRef Name="ciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Adm_Inspector_Adm_Persona">
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="1" />
+    <End Role="Adm_Inspector" Type="audimedModel.Store.Adm_Inspector" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Adm_Persona">
+        <PropertyRef Name="personaId" />
+      </Principal>
+      <Dependent Role="Adm_Inspector">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Adm_Persona_Sys_Usuario">
+    <End Role="Sys_Usuario" Type="audimedModel.Store.Sys_Usuario" Multiplicity="0..1" />
+    <End Role="Adm_Persona" Type="audimedModel.Store.Adm_Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Usuario">
+        <PropertyRef Name="usuarioId" />
+      </Principal>
+      <Dependent Role="Adm_Persona">
+        <PropertyRef Name="usuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpConsultaAmbulatoria_AUD_AmpliatorioMedico">
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="1" />
+    <End Role="AUD_AmpConsultaAmbulatoria" Type="audimedModel.Store.AUD_AmpConsultaAmbulatoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Principal>
+      <Dependent Role="AUD_AmpConsultaAmbulatoria">
+        <PropertyRef Name="ampliatorioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpConsultaAmbulatoria_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AmpConsultaAmbulatoria" Type="audimedModel.Store.AUD_AmpConsultaAmbulatoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AmpConsultaAmbulatoria">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpMateriaOsteosintesis_AUD_AmpliatorioMedico">
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="1" />
+    <End Role="AUD_AmpMateriaOsteosintesis" Type="audimedModel.Store.AUD_AmpMateriaOsteosintesis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Principal>
+      <Dependent Role="AUD_AmpMateriaOsteosintesis">
+        <PropertyRef Name="ampliatorioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpMateriaOsteosintesis_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AmpMateriaOsteosintesis" Type="audimedModel.Store.AUD_AmpMateriaOsteosintesis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AmpMateriaOsteosintesis">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpPermanenciaHospitalaria_AUD_AmpliatorioMedico">
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="1" />
+    <End Role="AUD_AmpPermanenciaHospitalaria" Type="audimedModel.Store.AUD_AmpPermanenciaHospitalaria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Principal>
+      <Dependent Role="AUD_AmpPermanenciaHospitalaria">
+        <PropertyRef Name="ampliatorioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_AmpPermanenciaHospitalaria_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_AmpPermanenciaHospitalaria" Type="audimedModel.Store.AUD_AmpPermanenciaHospitalaria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_AmpPermanenciaHospitalaria">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_DiagnosticoxInvalidez_AUD_InvalidezxCasoMedico">
+    <End Role="AUD_InvalidezxCasoMedico" Type="audimedModel.Store.AUD_InvalidezxCasoMedico" Multiplicity="0..1" />
+    <End Role="AUD_DiagnosticoxInvalidez" Type="audimedModel.Store.AUD_DiagnosticoxInvalidez" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_InvalidezxCasoMedico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="AUD_DiagnosticoxInvalidez">
+        <PropertyRef Name="invalidezCasoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_DocumentoxInvalidez_AUD_InvalidezxCasoMedico">
+    <End Role="AUD_InvalidezxCasoMedico" Type="audimedModel.Store.AUD_InvalidezxCasoMedico" Multiplicity="0..1" />
+    <End Role="AUD_DocumentoxInvalidez" Type="audimedModel.Store.AUD_DocumentoxInvalidez" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_InvalidezxCasoMedico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="AUD_DocumentoxInvalidez">
+        <PropertyRef Name="invelidezCasoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_Siniestro_AUD_Modelo_Vehiculo">
+    <End Role="AUD_Modelo_Vehiculo" Type="audimedModel.Store.AUD_Modelo_Vehiculo" Multiplicity="0..1" />
+    <End Role="AUD_Siniestro" Type="audimedModel.Store.AUD_Siniestro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_Modelo_Vehiculo">
+        <PropertyRef Name="modeloVehiculoId" />
+      </Principal>
+      <Dependent Role="AUD_Siniestro">
+        <PropertyRef Name="modeloVehiculoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_Terapias_AUD_AmpliatorioMedico">
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="1" />
+    <End Role="AUD_Terapias" Type="audimedModel.Store.AUD_Terapias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Principal>
+      <Dependent Role="AUD_Terapias">
+        <PropertyRef Name="ampliatorioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_Terapias_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_Terapias" Type="audimedModel.Store.AUD_Terapias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_Terapias">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_TipoReservaxCasoMedico_AUD_AmpliatorioMedico">
+    <End Role="AUD_AmpliatorioMedico" Type="audimedModel.Store.AUD_AmpliatorioMedico" Multiplicity="0..1" />
+    <End Role="AUD_TipoReservaxCasoMedico" Type="audimedModel.Store.AUD_TipoReservaxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_AmpliatorioMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Principal>
+      <Dependent Role="AUD_TipoReservaxCasoMedico">
+        <PropertyRef Name="ampliatorioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_TipoReservaxCasoMedico_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_TipoReservaxCasoMedico" Type="audimedModel.Store.AUD_TipoReservaxCasoMedico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_TipoReservaxCasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUD_VisitaMedica_AUD_CasoMedico">
+    <End Role="AUD_CasoMedico" Type="audimedModel.Store.AUD_CasoMedico" Multiplicity="1" />
+    <End Role="AUD_VisitaMedica" Type="audimedModel.Store.AUD_VisitaMedica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUD_CasoMedico">
+        <PropertyRef Name="casoMedicoId" />
+      </Principal>
+      <Dependent Role="AUD_VisitaMedica">
+        <PropertyRef Name="casoMedicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Acceso_Sys_Rol">
+    <End Role="Sys_Rol" Type="audimedModel.Store.Sys_Rol" Multiplicity="1" />
+    <End Role="Sys_Acceso" Type="audimedModel.Store.Sys_Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Rol">
+        <PropertyRef Name="rolId" />
+        <PropertyRef Name="appid" />
+      </Principal>
+      <Dependent Role="Sys_Acceso">
+        <PropertyRef Name="rolId" />
+        <PropertyRef Name="appId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_Rol_Sys_App">
+    <End Role="Sys_App" Type="audimedModel.Store.Sys_App" Multiplicity="1" />
+    <End Role="Sys_Rol" Type="audimedModel.Store.Sys_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_App">
+        <PropertyRef Name="appId" />
+      </Principal>
+      <Dependent Role="Sys_Rol">
+        <PropertyRef Name="appid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sys_RolUsuario_Sys_RolUsuario">
+    <End Role="Sys_Rol" Type="audimedModel.Store.Sys_Rol" Multiplicity="1" />
+    <End Role="Sys_RolUsuario" Type="audimedModel.Store.Sys_RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sys_Rol">
+        <PropertyRef Name="rolId" />
+        <PropertyRef Name="appid" />
+      </Principal>
+      <Dependent Role="Sys_RolUsuario">
+        <PropertyRef Name="rolId" />
+        <PropertyRef Name="appId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
